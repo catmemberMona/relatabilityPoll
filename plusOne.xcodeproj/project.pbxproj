@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,16 +58,40 @@
 		F96821CB2670201500ED7C17 /* plusOne */ = {
 			isa = PBXGroup;
 			children = (
+				F9868E46267059A20079A542 /* Controller */,
+				F9868E452670599C0079A542 /* View */,
+				F9868E44267059930079A542 /* Model */,
 				F96821CC2670201500ED7C17 /* AppDelegate.swift */,
 				F96821CE2670201500ED7C17 /* SceneDelegate.swift */,
-				F96821D02670201500ED7C17 /* ViewController.swift */,
-				F96821D22670201500ED7C17 /* Main.storyboard */,
 				F96821D82670201700ED7C17 /* Assets.xcassets */,
-				F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */,
 				F96821DD2670201700ED7C17 /* Info.plist */,
 				F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */,
 			);
 			path = plusOne;
+			sourceTree = "<group>";
+		};
+		F9868E44267059930079A542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9868E452670599C0079A542 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */,
+				F96821D22670201500ED7C17 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9868E46267059A20079A542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F96821D02670201500ED7C17 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = F96821C42670201500ED7C17 /* Build configuration list for PBXProject "plusOne" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -297,6 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SaltyYan.plusOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -316,6 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SaltyYan.plusOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
