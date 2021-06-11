@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */; };
 		F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */; };
+		F964EE9726741280007809B0 /* SingleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* SingleFeedViewController.swift */; };
+		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
+		F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* SingleTVCell.swift */; };
 		F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CC2670201500ED7C17 /* AppDelegate.swift */; };
 		F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CE2670201500ED7C17 /* SceneDelegate.swift */; };
 		F96821D12670201500ED7C17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821D02670201500ED7C17 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
 		F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
+		F964EE9626741280007809B0 /* SingleFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedViewController.swift; sourceTree = "<group>"; };
+		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
+		F964EE9B26741373007809B0 /* SingleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTVCell.swift; sourceTree = "<group>"; };
 		F96821C92670201500ED7C17 /* plusOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plusOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96821CC2670201500ED7C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96821CE2670201500ED7C17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F964EE9A2674133F007809B0 /* Single Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F964EE9626741280007809B0 /* SingleFeedViewController.swift */,
+				F964EE9826741337007809B0 /* SingleFeedTVC.swift */,
+				F964EE9B26741373007809B0 /* SingleTVCell.swift */,
+			);
+			path = "Single Feed";
+			sourceTree = "<group>";
+		};
 		F96821C02670201500ED7C17 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +109,7 @@
 		F9868E46267059A20079A542 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F964EE9A2674133F007809B0 /* Single Feed */,
 				F96821D02670201500ED7C17 /* ViewController.swift */,
 				F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */,
 				F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */,
@@ -171,11 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */,
+				F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */,
 				F96821D12670201500ED7C17 /* ViewController.swift in Sources */,
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,
 				F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */,
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
+				F964EE9726741280007809B0 /* SingleFeedViewController.swift in Sources */,
 				F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */,
+				F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

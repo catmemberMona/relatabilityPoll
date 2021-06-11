@@ -113,7 +113,7 @@
                                             <constraint firstAttribute="height" constant="40" id="RUd-Xj-oC9"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="ehZ-Kp-BrT" kind="presentation" modalPresentationStyle="fullScreen" id="W9s-xh-WwR"/>
+                                            <segue destination="ehZ-Kp-BrT" kind="presentation" identifier="firstToSingleFeed" modalPresentationStyle="fullScreen" id="W9s-xh-WwR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -128,6 +128,15 @@
                                     <constraint firstItem="hqU-rM-Fzv" firstAttribute="leading" secondItem="xuT-bq-HYB" secondAttribute="leading" id="p8C-LO-pdG"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+1" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6m-Td-C6k">
+                                <rect key="frame" x="305" y="402" width="89" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" red="0.83090967180752995" green="0.83090967180752995" blue="0.83090967180752995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="5" height="5"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -147,10 +156,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5Vl-w0-wA9"/>
+                    <connections>
+                        <outlet property="logoLabel" destination="r6m-Td-C6k" id="5Dl-cq-b6z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="75.669642857142847"/>
+            <point key="canvasLocation" x="-54" y="66"/>
         </scene>
         <!--Access Account View Controller-->
         <scene sceneID="CDx-pY-TCE">
@@ -275,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="2396" y="-530"/>
         </scene>
-        <!--View Controller-->
+        <!--Single Feed View Controller-->
         <scene sceneID="4d2-a3-wya">
             <objects>
-                <viewController id="ehZ-Kp-BrT" sceneMemberID="viewController">
+                <viewController id="ehZ-Kp-BrT" customClass="SingleFeedViewController" customModule="plusOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YFR-zk-Yvl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -539,9 +551,6 @@
                                     <navigationItem title="Recently Added" id="z5D-G1-xos">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="ct7-Ly-dQR">
                                             <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large"/>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="mtI-Ml-qHN"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -575,8 +584,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zIz-H5-hF5"/>
-        <segue reference="mtI-Ml-qHN"/>
+        <segue reference="RaQ-mu-JGR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
