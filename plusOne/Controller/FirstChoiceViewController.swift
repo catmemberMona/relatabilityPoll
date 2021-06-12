@@ -14,24 +14,9 @@ class FirstChoiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        plusOneAnimation()
-       
-        
+        plusOneAnimation(label: logoLabel, text: "+1" )
     }
     
-    func plusOneAnimation(){
-        logoLabel.text = ""
-        let logoText = "+1"
-        var charIndex = 1.0
-        for char in logoText {
-            Timer.scheduledTimer(withTimeInterval: 0.5 * charIndex, repeats: false) {
-                (timer) in
-                self.logoLabel.text?.append(char)
-            }
-            charIndex+=1
-        }
-    }
     
 
     /*

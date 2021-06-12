@@ -12,6 +12,7 @@
 		F964EE9726741280007809B0 /* SingleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* SingleFeedViewController.swift */; };
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
 		F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* SingleTVCell.swift */; };
+		F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9E267437DF007809B0 /* typingAnimation.swift */; };
 		F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CC2670201500ED7C17 /* AppDelegate.swift */; };
 		F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CE2670201500ED7C17 /* SceneDelegate.swift */; };
 		F96821D12670201500ED7C17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821D02670201500ED7C17 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		F964EE9626741280007809B0 /* SingleFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedViewController.swift; sourceTree = "<group>"; };
 		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
 		F964EE9B26741373007809B0 /* SingleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTVCell.swift; sourceTree = "<group>"; };
+		F964EE9E267437DF007809B0 /* typingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typingAnimation.swift; sourceTree = "<group>"; };
 		F96821C92670201500ED7C17 /* plusOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plusOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96821CC2670201500ED7C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96821CE2670201500ED7C17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,22 @@
 			path = "Single Feed";
 			sourceTree = "<group>";
 		};
+		F964EE9D267437BF007809B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F964EEA0267437EC007809B0 /* Animations */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F964EEA0267437EC007809B0 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F964EE9E267437DF007809B0 /* typingAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		F96821C02670201500ED7C17 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +96,7 @@
 		F96821CB2670201500ED7C17 /* plusOne */ = {
 			isa = PBXGroup;
 			children = (
+				F964EE9D267437BF007809B0 /* Utils */,
 				F9868E46267059A20079A542 /* Controller */,
 				F9868E452670599C0079A542 /* View */,
 				F9868E44267059930079A542 /* Model */,
@@ -196,6 +215,7 @@
 				F964EE9726741280007809B0 /* SingleFeedViewController.swift in Sources */,
 				F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */,
 				F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */,
+				F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
