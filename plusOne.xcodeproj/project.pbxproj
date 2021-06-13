@@ -21,6 +21,7 @@
 		F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */; };
 		F96821D92670201700ED7C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96821D82670201700ED7C17 /* Assets.xcassets */; };
 		F96821DC2670201700ED7C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */; };
+		F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = F96A24552676885700E4630E /* apps.googleusercontent.com.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F96821D82670201700ED7C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F96821DB2670201700ED7C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F96821DD2670201700ED7C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F96A24552676885700E4630E /* apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.googleusercontent.com.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				F96821CE2670201500ED7C17 /* SceneDelegate.swift */,
 				F96821D82670201700ED7C17 /* Assets.xcassets */,
 				F96821DD2670201700ED7C17 /* Info.plist */,
+				F96A24552676885700E4630E /* apps.googleusercontent.com.plist */,
 				F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */,
 			);
 			path = plusOne;
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */,
 				F96821DC2670201700ED7C17 /* LaunchScreen.storyboard in Resources */,
 				F96821D92670201700ED7C17 /* Assets.xcassets in Resources */,
 				F96821D42670201500ED7C17 /* Main.storyboard in Resources */,
