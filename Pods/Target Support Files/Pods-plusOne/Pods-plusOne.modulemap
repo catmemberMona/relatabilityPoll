@@ -1,0 +1,6 @@
+framework module Pods_plusOne {
+  umbrella header "Pods-plusOne-umbrella.h"
+
+  export *
+  module * { export * }
+}
