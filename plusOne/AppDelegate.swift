@@ -36,10 +36,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
       // Perform any operations when the user disconnects from app here.
       
     }
+    
+    // Get clientID
+    private var apiKey: String {
+         get {
+           // 1
+           guard let filePath = Bundle.main.path(forResource: "apps.googleusercontent.com", ofType: "plist") else {
+             fatalError("Couldn't find file 'apps.googleusercontent.com.plist'.")
+           }
+           // 2
+           let plist = NSDictionary(contentsOfFile: filePath)
+           guard let value = plist?.object(forKey: "CLIENT_ID") as? String else {
+             fatalError("Couldn't find key 'CLIENT_ID' in 'apps.googleusercontent.com.plist'.")
+           }
+           return value
+         }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Initialize sign-in
-         GIDSignIn.sharedInstance().clientID = "58480170694-onse7tnqe4hl1iscac02mr8koj81uims.apps.googleusercontent.com"
+         GIDSignIn.sharedInstance().clientID = apiKey
          GIDSignIn.sharedInstance().delegate = self
         return true
     }
