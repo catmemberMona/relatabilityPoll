@@ -24,18 +24,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        self.window = window
         
        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-       var identifier:String = "Guest_Feed_View"
+       var identifier:String = "First_Choice"
         
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
-        if let _ = GIDSignIn.sharedInstance()?.currentUser {
-            print("Hellooooo i'm logged in ")
+        if GIDSignIn.sharedInstance()?.currentUser != nil {
             identifier = "User_Feed_View"
-        } else if (UserDefaults().value(forKey: "First_Download") == nil) {
-            identifier = "First_Choice"
-        } else {
-            print("NOT LOGGED IN AT ALLLLLL")
         }
            
        

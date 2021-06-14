@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="958" y="-688"/>
         </scene>
-        <!--User Single Feed View-->
+        <!--User Single Feed View Controller-->
         <scene sceneID="tKQ-tT-72r">
             <objects>
-                <viewController storyboardIdentifier="User_Feed_View" id="nwY-9r-U3v" customClass="UserSingleFeedView" customModule="plusOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="User_Feed_View" id="nwY-9r-U3v" customClass="UserSingleFeedViewController" customModule="plusOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w6O-zq-z8Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,7 +486,6 @@
                                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="si2-eM-FM9">
                                             <connections>
                                                 <action selector="didTapSignOut:" destination="nwY-9r-U3v" id="zFH-E8-Alq"/>
-                                                <segue destination="ehZ-Kp-BrT" kind="presentation" identifier="Logged_In_To_Out" modalPresentationStyle="fullScreen" id="tn2-yO-boS"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -502,6 +501,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Yhc-A6-dmO"/>
+                    <connections>
+                        <segue destination="ehZ-Kp-BrT" kind="presentation" identifier="Logged_In_To_Out" modalPresentationStyle="fullScreen" id="Veh-T7-1Nl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htN-56-4QO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -794,7 +796,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tn2-yO-boS"/>
+        <segue reference="Veh-T7-1Nl"/>
         <segue reference="cbX-Qk-xpM"/>
         <segue reference="zIz-H5-hF5"/>
     </inferredMetricsTieBreakers>

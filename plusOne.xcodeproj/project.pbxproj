@@ -16,7 +16,7 @@
 		F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9E267437DF007809B0 /* typingAnimation.swift */; };
 		F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CC2670201500ED7C17 /* AppDelegate.swift */; };
 		F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CE2670201500ED7C17 /* SceneDelegate.swift */; };
-		F96821D12670201500ED7C17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821D02670201500ED7C17 /* ViewController.swift */; };
+		F96821D12670201500ED7C17 /* UserSingleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821D02670201500ED7C17 /* UserSingleFeedViewController.swift */; };
 		F96821D42670201500ED7C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96821D22670201500ED7C17 /* Main.storyboard */; };
 		F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */; };
 		F96821D92670201700ED7C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96821D82670201700ED7C17 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 		F96821C92670201500ED7C17 /* plusOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plusOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96821CC2670201500ED7C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96821CE2670201500ED7C17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F96821D02670201500ED7C17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F96821D02670201500ED7C17 /* UserSingleFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleFeedViewController.swift; sourceTree = "<group>"; };
 		F96821D32670201500ED7C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F96821D62670201500ED7C17 /* plusOne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = plusOne.xcdatamodel; sourceTree = "<group>"; };
 		F96821D82670201700ED7C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				F964EE9A2674133F007809B0 /* Single Feed */,
-				F96821D02670201500ED7C17 /* ViewController.swift */,
+				F96821D02670201500ED7C17 /* UserSingleFeedViewController.swift */,
 				F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */,
 				F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */,
 			);
@@ -298,7 +298,7 @@
 			files = (
 				F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */,
 				F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */,
-				F96821D12670201500ED7C17 /* ViewController.swift in Sources */,
+				F96821D12670201500ED7C17 /* UserSingleFeedViewController.swift in Sources */,
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,
 				F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */,
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
