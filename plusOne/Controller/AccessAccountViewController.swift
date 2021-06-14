@@ -9,18 +9,16 @@ import UIKit
 import GoogleSignIn
 
 class AccessAccountViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         GIDSignIn.sharedInstance()?.presentingViewController = self
 
-         // Automatically sign in the user.
-         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-
     }
     
-
+    
     /*
     // MARK: - Navigation
 
