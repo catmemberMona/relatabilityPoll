@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class ViewController: UIViewController {
+class UserSingleFeedView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +16,11 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func didTapSignOut(_ sender: Any) {
+        GIDSignIn.sharedInstance().signOut()
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
 }
 

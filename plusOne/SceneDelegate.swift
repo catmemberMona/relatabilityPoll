@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-       print("IN THE SCENEEEEEE")
+        
         if let _ = GIDSignIn.sharedInstance()?.currentUser {
             print("Hellooooo i'm logged in ")
             identifier = "User_Feed_View"
