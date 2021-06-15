@@ -17,15 +17,8 @@ class UserSingleFeedViewController: UIViewController {
     }
 
     @IBAction func didTapSignOut(_ sender: Any) {
-        if GIDSignIn.sharedInstance().currentUser != nil {
-            GIDSignIn.sharedInstance().signOut()
-
-        } else {
-            print("You were never signed in....")
-        }
-        
+        GIDSignIn.sharedInstance().signOut()
         self.performSegue(withIdentifier: K.toGuestViewSegue, sender: self)
-        
     }
     
 }
