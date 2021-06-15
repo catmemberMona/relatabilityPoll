@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
       let email = user.profile.email
      
         
-        
         // redirects to signed in user's view controller
         let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = mainStoryboard.instantiateViewController(withIdentifier: K.userFeedVC)
