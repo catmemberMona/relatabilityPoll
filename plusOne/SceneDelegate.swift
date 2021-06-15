@@ -24,13 +24,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        self.window = window
         
        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-       var identifier:String = "First_Choice"
+        var identifier:String = K.firstDecisionVC
         
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
         if GIDSignIn.sharedInstance()?.currentUser != nil {
-            identifier = "User_Feed_View"
+            identifier = K.userFeedVC
         }
            
        

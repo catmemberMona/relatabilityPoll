@@ -24,7 +24,7 @@ class UserSingleFeedViewController: UIViewController {
             print("You were never signed in....")
         }
         
-        self.performSegue(withIdentifier: "Logged_In_To_Out", sender: self)
+        self.performSegue(withIdentifier: K.toGuestViewSegue, sender: self)
         
     }
     

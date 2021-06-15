@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30085E26BFFCB92128D96EC2 /* Pods_plusOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72528A9305A3B06B2B311016 /* Pods_plusOne.framework */; };
+		F948950326782D1B006F7E18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948950226782D1B006F7E18 /* Constants.swift */; };
 		F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */; };
 		F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */; };
 		F964EE9726741280007809B0 /* SingleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* SingleFeedViewController.swift */; };
@@ -28,6 +29,7 @@
 		4CCCB27CCB24C2722DF2870F /* Pods-plusOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.release.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.release.xcconfig"; sourceTree = "<group>"; };
 		72528A9305A3B06B2B311016 /* Pods_plusOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plusOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE6EE73C714455D114F055A /* Pods-plusOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.debug.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.debug.xcconfig"; sourceTree = "<group>"; };
+		F948950226782D1B006F7E18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
 		F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
 		F964EE9626741280007809B0 /* SingleFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				F96821DD2670201700ED7C17 /* Info.plist */,
 				F96A24552676885700E4630E /* apps.googleusercontent.com.plist */,
 				F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */,
+				F948950226782D1B006F7E18 /* Constants.swift */,
 			);
 			path = plusOne;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */,
+				F948950326782D1B006F7E18 /* Constants.swift in Sources */,
 				F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */,
 				F96821D12670201500ED7C17 /* UserSingleFeedViewController.swift in Sources */,
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,

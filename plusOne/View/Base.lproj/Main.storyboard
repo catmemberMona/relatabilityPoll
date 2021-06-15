@@ -12,7 +12,7 @@
         <!--First Choice View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="First_Choice" id="BYZ-38-t0r" customClass="FirstChoiceViewController" customModule="plusOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="First_Decision" id="BYZ-38-t0r" customClass="FirstChoiceViewController" customModule="plusOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Create an account"/>
                                         <connections>
-                                            <segue destination="fp6-PU-XWB" kind="presentation" identifier="firstToCreateAccount" modalPresentationStyle="fullScreen" id="trj-73-uai"/>
+                                            <segue destination="fp6-PU-XWB" kind="presentation" identifier="First_To_Create_Account" modalPresentationStyle="fullScreen" id="trj-73-uai"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -90,7 +90,7 @@
                                             <constraint firstAttribute="height" constant="40" id="RUd-Xj-oC9"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="ehZ-Kp-BrT" kind="presentation" identifier="firstToSingleFeed" modalPresentationStyle="fullScreen" id="W9s-xh-WwR"/>
+                                            <segue destination="ehZ-Kp-BrT" kind="presentation" identifier="First_To_Single_Feed" modalPresentationStyle="fullScreen" id="W9s-xh-WwR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -213,9 +213,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QAE-xH-JMr"/>
-                    <connections>
-                        <segue destination="nwY-9r-U3v" kind="presentation" identifier="signinToFeed" modalPresentationStyle="fullScreen" id="kCR-dP-xca"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3z-am-ynS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -786,9 +783,6 @@
                             <constraint firstItem="HMB-aq-U5O" firstAttribute="leading" secondItem="cSz-6B-cRu" secondAttribute="leading" id="wG6-B9-UDl"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="nwY-9r-U3v" kind="presentation" identifier="NotLoggedInToLoggedIn" modalPresentationStyle="fullScreen" id="cbX-Qk-xpM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkZ-Dd-OQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -796,9 +790,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Veh-T7-1Nl"/>
-        <segue reference="cbX-Qk-xpM"/>
-        <segue reference="zIz-H5-hF5"/>
+        <segue reference="W9s-xh-WwR"/>
+        <segue reference="trj-73-uai"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>

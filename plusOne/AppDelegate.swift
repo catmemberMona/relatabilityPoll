@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         // redirects to signed in user's view controller
         let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = mainStoryboard.instantiateViewController(withIdentifier: "User_Feed_View")
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: K.userFeedVC)
         UIApplication.shared.windows.first?.rootViewController? = vc
         UIApplication.shared.windows.first?.makeKeyAndVisible()
         
