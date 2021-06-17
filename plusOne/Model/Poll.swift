@@ -12,7 +12,8 @@ struct Poll {
     var statement: String
     
     init(id:Int? = nil, statement:String) {
-        self.id = id
+        // id will also be the same as index
+        self.id = PollManager.totalPolls
         self.statement = statement
     }
     

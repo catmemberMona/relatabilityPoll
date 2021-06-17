@@ -9,7 +9,7 @@ import Foundation
 
 class PollManager {
     private var polls: [Poll] = []
-    var totalPolls = 0
+    static var totalPolls = 0
     
     func addPoll(poll: Poll){
         totalPolls+=1

@@ -24,12 +24,4 @@ class PollStructTest: XCTestCase {
         XCTAssertNotNil(testPoll)
         XCTAssertEqual(testPoll.statement, "Farted at least once on the subway.")
     }
-    
-    func testInit_SetPollWithStatementAndID(){
-        let testPoll = Poll(id: 1, statement: "Ate a whole pizza pie in a day.")
-        
-        XCTAssertNotNil(testPoll)
-        XCTAssertEqual(testPoll.id, 1)
-    }
-
 }
