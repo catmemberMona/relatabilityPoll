@@ -21,8 +21,26 @@ class PollManagerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // MARK: Inital Values
     func testInit_PollsToSee_ReturnsZero(){
         XCTAssertEqual(sut.totalPolls, 0)
+    }
+    
+    // MARK: Add and query
+    func testAdd_TotalPolls_ReturnsOne(){
+        let testPoll = Poll(statement: "Gave birth.")
+        sut.addPoll(poll: testPoll)
+        
+        XCTAssertEqual(sut.totalPolls, 1)
+    }
+    
+    func testQuery_ReturnsPollByIndex(){
+        let testPoll = Poll(statement: "Almost drowned in the past.")
+        sut.addPoll(poll: testPoll)
+        
+        let pollQueried = sut.pollAtIndex(index: 0)
+        XCTAssertEqual(testPoll.statement, pollQueried.statement)
+        
     }
 
 }
