@@ -15,6 +15,10 @@
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
 		F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* SingleTVCell.swift */; };
 		F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9E267437DF007809B0 /* typingAnimation.swift */; };
+		F966CF63267BC3DD0058BA29 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF62267BC3DD0058BA29 /* Poll.swift */; };
+		F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF66267BD0F80058BA29 /* PollStructTest.swift */; };
+		F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF68267BD1B40058BA29 /* PollManagerTests.swift */; };
+		F966CF6B267BD27F0058BA29 /* PollManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF6A267BD27F0058BA29 /* PollManager.swift */; };
 		F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CC2670201500ED7C17 /* AppDelegate.swift */; };
 		F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CE2670201500ED7C17 /* SceneDelegate.swift */; };
 		F96821D12670201500ED7C17 /* UserSingleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821D02670201500ED7C17 /* UserSingleFeedViewController.swift */; };
@@ -24,6 +28,16 @@
 		F96821DC2670201700ED7C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */; };
 		F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = F96A24552676885700E4630E /* apps.googleusercontent.com.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F966CF5D267BC1500058BA29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F96821C12670201500ED7C17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F96821C82670201500ED7C17;
+			remoteInfo = plusOne;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4CCCB27CCB24C2722DF2870F /* Pods-plusOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.release.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.release.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +50,12 @@
 		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
 		F964EE9B26741373007809B0 /* SingleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTVCell.swift; sourceTree = "<group>"; };
 		F964EE9E267437DF007809B0 /* typingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typingAnimation.swift; sourceTree = "<group>"; };
+		F966CF58267BC1500058BA29 /* plusOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plusOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F966CF5C267BC1500058BA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F966CF62267BC3DD0058BA29 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
+		F966CF66267BD0F80058BA29 /* PollStructTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollStructTest.swift; sourceTree = "<group>"; };
+		F966CF68267BD1B40058BA29 /* PollManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollManagerTests.swift; sourceTree = "<group>"; };
+		F966CF6A267BD27F0058BA29 /* PollManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollManager.swift; sourceTree = "<group>"; };
 		F96821C92670201500ED7C17 /* plusOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plusOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96821CC2670201500ED7C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96821CE2670201500ED7C17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F966CF55267BC1500058BA29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F96821C62670201500ED7C17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,10 +130,37 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		F966CF59267BC1500058BA29 /* plusOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				F966CF65267BD0B20058BA29 /* TestControllers */,
+				F966CF64267BD0A40058BA29 /* TestModels */,
+				F966CF5C267BC1500058BA29 /* Info.plist */,
+			);
+			path = plusOneTests;
+			sourceTree = "<group>";
+		};
+		F966CF64267BD0A40058BA29 /* TestModels */ = {
+			isa = PBXGroup;
+			children = (
+				F966CF66267BD0F80058BA29 /* PollStructTest.swift */,
+				F966CF68267BD1B40058BA29 /* PollManagerTests.swift */,
+			);
+			path = TestModels;
+			sourceTree = "<group>";
+		};
+		F966CF65267BD0B20058BA29 /* TestControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestControllers;
+			sourceTree = "<group>";
+		};
 		F96821C02670201500ED7C17 = {
 			isa = PBXGroup;
 			children = (
 				F96821CB2670201500ED7C17 /* plusOne */,
+				F966CF59267BC1500058BA29 /* plusOneTests */,
 				F96821CA2670201500ED7C17 /* Products */,
 				A77F3F95C3A2B88F87A801AA /* Pods */,
 				BA6AC06359E0390A525B503E /* Frameworks */,
@@ -117,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				F96821C92670201500ED7C17 /* plusOne.app */,
+				F966CF58267BC1500058BA29 /* plusOneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +197,8 @@
 		F9868E44267059930079A542 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F966CF62267BC3DD0058BA29 /* Poll.swift */,
+				F966CF6A267BD27F0058BA29 /* PollManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +226,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F966CF57267BC1500058BA29 /* plusOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F966CF5F267BC1500058BA29 /* Build configuration list for PBXNativeTarget "plusOneTests" */;
+			buildPhases = (
+				F966CF54267BC1500058BA29 /* Sources */,
+				F966CF55267BC1500058BA29 /* Frameworks */,
+				F966CF56267BC1500058BA29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F966CF5E267BC1500058BA29 /* PBXTargetDependency */,
+			);
+			name = plusOneTests;
+			productName = plusOneTests;
+			productReference = F966CF58267BC1500058BA29 /* plusOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F96821C82670201500ED7C17 /* plusOne */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F96821E02670201700ED7C17 /* Build configuration list for PBXNativeTarget "plusOne" */;
@@ -198,6 +273,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					F966CF57267BC1500058BA29 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F96821C82670201500ED7C17;
+					};
 					F96821C82670201500ED7C17 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -217,11 +296,19 @@
 			projectRoot = "";
 			targets = (
 				F96821C82670201500ED7C17 /* plusOne */,
+				F966CF57267BC1500058BA29 /* plusOneTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F966CF56267BC1500058BA29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F96821C72670201500ED7C17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +382,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F966CF54267BC1500058BA29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */,
+				F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F96821C52670201500ED7C17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +399,8 @@
 				F948950326782D1B006F7E18 /* Constants.swift in Sources */,
 				F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */,
 				F96821D12670201500ED7C17 /* UserSingleFeedViewController.swift in Sources */,
+				F966CF63267BC3DD0058BA29 /* Poll.swift in Sources */,
+				F966CF6B267BD27F0058BA29 /* PollManager.swift in Sources */,
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,
 				F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */,
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
@@ -314,6 +412,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F966CF5E267BC1500058BA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F96821C82670201500ED7C17 /* plusOne */;
+			targetProxy = F966CF5D267BC1500058BA29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F96821D22670201500ED7C17 /* Main.storyboard */ = {
@@ -335,6 +441,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F966CF60267BC1500058BA29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSD89CWF5Y;
+				INFOPLIST_FILE = plusOneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SaltyYan.plusOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plusOne.app/plusOne";
+			};
+			name = Debug;
+		};
+		F966CF61267BC1500058BA29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSD89CWF5Y;
+				INFOPLIST_FILE = plusOneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SaltyYan.plusOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plusOne.app/plusOne";
+			};
+			name = Release;
+		};
 		F96821DE2670201700ED7C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -496,6 +644,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F966CF5F267BC1500058BA29 /* Build configuration list for PBXNativeTarget "plusOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F966CF60267BC1500058BA29 /* Debug */,
+				F966CF61267BC1500058BA29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F96821C42670201500ED7C17 /* Build configuration list for PBXProject "plusOne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
