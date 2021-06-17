@@ -53,6 +53,13 @@ class PollManagerTests: XCTestCase {
         XCTAssertEqual(testPoll.statement, queryPollById.statement)
     }
     
+    func testToggle_PollIsHidden_ReturnTrue(){
+        let testPoll = testPolls[0]
+        sut.addPoll(poll: testPoll)
+        let isHidden = sut.toggleHidden(index: 0)
+        
+        XCTAssertEqual(isHidden, true)
+    }
     
 
 }

@@ -19,4 +19,10 @@ class PollManager {
     func pollAtIndex(index: Int)-> Poll { 
         return polls[index]
     }
+    
+    func toggleHidden(index: Int) -> Bool {
+        var poll = polls[index]
+        poll.hidden = !poll.hidden
+        return poll.hidden
+    }
 }
