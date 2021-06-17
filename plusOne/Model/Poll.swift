@@ -13,7 +13,7 @@ struct Poll {
     
     init(id:Int? = nil, statement:String) {
         // id will also be the same as index
-        self.id = PollManager.totalPolls
+        self.id = id
         self.statement = statement
     }
     

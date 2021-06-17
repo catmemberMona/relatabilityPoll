@@ -40,7 +40,18 @@ class PollManagerTests: XCTestCase {
         
         let pollQueried = sut.pollAtIndex(index: 0)
         XCTAssertEqual(testPoll.statement, pollQueried.statement)
-        
     }
+    
+    // MARK: Synced id and index
+    func testSynced_PollIdAndIndex_ReturnTrue(){
+        let testPoll = Poll(id: 0, statement: "No cat, but love cats.")
+        let pollId = testPoll.id
+
+        sut.addPoll(poll: testPoll)
+        let queryPollById = sut.pollAtIndex(index: pollId!)
+        XCTAssertEqual(testPoll.statement, queryPollById.statement)
+    }
+    
+    
 
 }
