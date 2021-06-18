@@ -6,16 +6,19 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class AccessAccountViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+
     }
     
-
+    
     /*
     // MARK: - Navigation
 
