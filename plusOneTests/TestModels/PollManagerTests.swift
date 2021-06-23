@@ -14,9 +14,15 @@ class PollManagerTests: XCTestCase {
     
     var testPolls = [Poll(id: 0, statement: "Gave birth."), Poll(id: 1, statement: "Almost drowned in the past."), Poll(id: 3, statement: "No cat, but love cats.")]
 
+    var testPoll: Poll!
+    var testPoll2: Poll!
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         sut = PollManager()
+        testPoll = testPolls[0]
+        testPoll2 = testPolls[1]
+        
     }
 
     override func tearDownWithError() throws {
@@ -24,11 +30,19 @@ class PollManagerTests: XCTestCase {
     }
 
     // MARK: Inital Values
-    func testInit_PollsToSee_ReturnsZero(){
+    func testInit_TotalPolls_ReturnsZero(){
         XCTAssertEqual(sut.totalPolls, 0)
     }
     
-    // MARK: Add and query
+    func testInit_VisiblePolls_ReturnsZero(){
+        XCTAssertEqual(sut.visiblePolls.count, 0)
+    }
+    
+    func testInit_HiddenPolls_ReturnsZero(){
+        XCTAssertEqual(sut.hiddenPolls.count, 0)
+    }
+    
+    // MARK: Add and query all polls
     func testAdd_TotalPolls_ReturnsOne(){
         sut.addPoll(poll: testPolls[0])
         
@@ -36,29 +50,59 @@ class PollManagerTests: XCTestCase {
     }
     
     func testQuery_ReturnsPollByIndex(){
-        let testPoll = testPolls[0]
         sut.addPoll(poll: testPoll)
         
-        let pollQueried = sut.pollAtIndex(index: 0)
+        let pollQueried = sut.pollAtIndex(id: 0)
         XCTAssertEqual(testPoll.statement, pollQueried.statement)
     }
     
     // MARK: Synced id and index
     func testSynced_PollIdAndIndex_ReturnTrue(){
-        let testPoll = testPolls[0]
         let pollId = testPoll.id
 
         sut.addPoll(poll: testPoll)
-        let queryPollById = sut.pollAtIndex(index: pollId!)
+        let queryPollById = sut.pollAtIndex(id: pollId)
         XCTAssertEqual(testPoll.statement, queryPollById.statement)
     }
     
-    func testToggle_PollIsHidden_ReturnTrue(){
-        let testPoll = testPolls[0]
+    // MARK: New poll is visible
+    func testAdd_VisiblePolls_ReturnOne(){
         sut.addPoll(poll: testPoll)
-        let isHidden = sut.toggleHidden(index: 0)
+        let poll = sut.visiblePolls[0]
         
-        XCTAssertEqual(isHidden, true)
+        XCTAssertEqual(testPoll.statement, poll.statement)
+    }
+    
+    // MARK: Toggle visibility of poll
+    func testToggle_PollIsHidden_ReturnTrue(){
+        sut.addPoll(poll: testPoll)
+        let poll = sut.toggleVisibility(id: 0)
+        
+        XCTAssertEqual(poll.hidden, true)
+    }
+    
+    // MARK: Equatable
+    func testEquable_ReturnFalse(){
+        XCTAssertNotEqual(testPoll, testPoll2)
+    }
+    
+    // MARK: Remove hidden poll from feed
+    func testVisibleFeed_HasPoll_ReturnFalse(){
+        sut.addPoll(poll: testPoll)
+        _ = sut.toggleVisibility(id: 0)
+        let hasPoll = sut.visiblePolls.contains(testPoll)
+        let hidden = sut.hiddenPolls.contains(testPoll)
+        
+        XCTAssertFalse(hasPoll)
+        XCTAssertTrue(hidden)
+    }
+    
+    func testHiddenPolls_HasPoll_ReturnsTrue(){
+        sut.addPoll(poll: testPoll)
+        _ = sut.toggleVisibility(id: 0)
+        let hidden = sut.hiddenPolls.contains(testPoll)
+        
+        XCTAssertTrue(hidden)
     }
     
 
