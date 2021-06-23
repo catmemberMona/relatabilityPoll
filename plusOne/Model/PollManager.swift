@@ -9,20 +9,27 @@ import Foundation
 
 class PollManager {
     var polls: [Poll] = []
-    var totalPolls = 0
+    var visiblePolls: [Poll] = []
+    var hiddenPolls: [Poll] = []
+    
+    var totalPolls: Int { return polls.count}
     
     func addPoll(poll: Poll){
-        totalPolls+=1
         polls.append(poll)
+        visiblePolls.append(poll)
     }
     
-    func pollAtIndex(index: Int)-> Poll { 
-        return polls[index]
+    func pollAtIndex(id: Int)-> Poll {
+        return polls[id]
     }
     
-    func toggleHidden(index: Int) -> Bool {
-        var poll = polls[index]
+    func toggleVisibility(id: Int) -> Poll {
+        let index = visiblePolls.firstIndex(where: { $0.id == id })
+        var poll = visiblePolls.remove(at: index!)
+    
         poll.hidden = !poll.hidden
-        return poll.hidden
+        hiddenPolls.append(poll)
+        
+        return poll
     }
 }
