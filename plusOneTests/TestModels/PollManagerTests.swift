@@ -86,7 +86,7 @@ class PollManagerTests: XCTestCase {
         XCTAssertNotEqual(testPoll, testPoll2)
     }
     
-    // MARK: Remove hidden poll from feed
+    // MARK: Hide poll from feed
     func testVisibleFeed_HasPoll_ReturnFalse(){
         sut.addPoll(poll: testPoll)
         _ = sut.toggleVisibility(id: 0)
