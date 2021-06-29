@@ -11,7 +11,7 @@
 		F948950326782D1B006F7E18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948950226782D1B006F7E18 /* Constants.swift */; };
 		F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */; };
 		F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */; };
-		F964EE9726741280007809B0 /* SingleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* SingleFeedViewController.swift */; };
+		F964EE9726741280007809B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* FeedViewController.swift */; };
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
 		F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* SingleTVCell.swift */; };
 		F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9E267437DF007809B0 /* typingAnimation.swift */; };
@@ -27,6 +27,7 @@
 		F96821D92670201700ED7C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96821D82670201700ED7C17 /* Assets.xcassets */; };
 		F96821DC2670201700ED7C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */; };
 		F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = F96A24552676885700E4630E /* apps.googleusercontent.com.plist */; };
+		F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,7 @@
 		F948950226782D1B006F7E18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
 		F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
-		F964EE9626741280007809B0 /* SingleFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedViewController.swift; sourceTree = "<group>"; };
+		F964EE9626741280007809B0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
 		F964EE9B26741373007809B0 /* SingleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTVCell.swift; sourceTree = "<group>"; };
 		F964EE9E267437DF007809B0 /* typingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typingAnimation.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		F96821DB2670201700ED7C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F96821DD2670201700ED7C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96A24552676885700E4630E /* apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.googleusercontent.com.plist; sourceTree = "<group>"; };
+		F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,7 @@
 		F964EE9A2674133F007809B0 /* Single Feed */ = {
 			isa = PBXGroup;
 			children = (
-				F964EE9626741280007809B0 /* SingleFeedViewController.swift */,
+				F964EE9626741280007809B0 /* FeedViewController.swift */,
 				F964EE9826741337007809B0 /* SingleFeedTVC.swift */,
 				F964EE9B26741373007809B0 /* SingleTVCell.swift */,
 			);
@@ -152,6 +154,7 @@
 		F966CF65267BD0B20058BA29 /* TestControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */,
 			);
 			path = TestControllers;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */,
+				F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */,
 				F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +408,7 @@
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,
 				F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */,
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
-				F964EE9726741280007809B0 /* SingleFeedViewController.swift in Sources */,
+				F964EE9726741280007809B0 /* FeedViewController.swift in Sources */,
 				F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */,
 				F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */,
 				F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */,

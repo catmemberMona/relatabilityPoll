@@ -505,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="2689.8550724637685" y="-200.22321428571428"/>
         </scene>
-        <!--Single Feed View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="4d2-a3-wya">
             <objects>
-                <viewController storyboardIdentifier="Guest_Feed_View" id="ehZ-Kp-BrT" customClass="SingleFeedViewController" customModule="plusOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Guest_Feed_View_Controller_Id" id="ehZ-Kp-BrT" customClass="FeedViewController" customModule="plusOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YFR-zk-Yvl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -634,6 +634,9 @@
                             <constraint firstItem="HMB-aq-U5O" firstAttribute="leading" secondItem="cSz-6B-cRu" secondAttribute="leading" id="wG6-B9-UDl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="feedTableView" destination="8iA-qa-Ds7" id="n5o-jK-nBD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkZ-Dd-OQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
