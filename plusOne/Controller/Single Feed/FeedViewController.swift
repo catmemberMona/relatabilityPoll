@@ -17,6 +17,7 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         
         self.feedTableView.dataSource = dataService
+        self.feedTableView.delegate = dataService
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
     }
