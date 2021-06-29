@@ -14,7 +14,7 @@ class FeedViewControllerTests: XCTestCase {
 
     override func setUpWithError() throws {
         sut = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Guest_Feed_View_Controller_Id") as! FeedViewController)
-        _ = sut.view 
+        _ = sut.view
     }
 
     override func tearDownWithError() throws {
@@ -26,4 +26,11 @@ class FeedViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.feedTableView)
     }
 
+    // MARK: Data Source
+    func testDataSource_ViewDidLoad_SetsTableViewDataSource() {
+        XCTAssertNotNil(sut.feedTableView.dataSource)
+        XCTAssertTrue(sut.feedTableView.dataSource is PollCollectionDataService)
+    }
+    
+    
 }

@@ -635,10 +635,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dataService" destination="fxy-OK-bs1" id="7MO-dz-vQ9"/>
                         <outlet property="feedTableView" destination="8iA-qa-Ds7" id="n5o-jK-nBD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkZ-Dd-OQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="fxy-OK-bs1" userLabel="Poll Collection Data Service" customClass="PollCollectionDataService" customModule="plusOne" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="891" y="917"/>
         </scene>
@@ -729,7 +731,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="dul-kL-mVw"/>
                             </scrollView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnK-0f-33m">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="search" id="AqB-YM-lfc"/>
