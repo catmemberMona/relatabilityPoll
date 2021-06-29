@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
         if GIDSignIn.sharedInstance()?.currentUser != nil {
-            identifier = K.userFeedVC
+            identifier = K.userFeedVCId
         }
            
        
