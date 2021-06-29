@@ -187,9 +187,9 @@
 				F96821CE2670201500ED7C17 /* SceneDelegate.swift */,
 				F96821D82670201700ED7C17 /* Assets.xcassets */,
 				F96821DD2670201700ED7C17 /* Info.plist */,
-				F96A24552676885700E4630E /* apps.googleusercontent.com.plist */,
 				F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */,
 				F948950226782D1B006F7E18 /* Constants.swift */,
+				F96A24552676885700E4630E /* apps.googleusercontent.com.plist */,
 			);
 			path = plusOne;
 			sourceTree = "<group>";
