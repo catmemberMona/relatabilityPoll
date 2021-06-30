@@ -11,9 +11,13 @@ import GoogleSignIn
 class FeedViewController: UIViewController {
 
     @IBOutlet weak var feedTableView: UITableView!
+    @IBOutlet var dataService: PollCollectionDataService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.feedTableView.dataSource = dataService
+        self.feedTableView.delegate = dataService
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
     }
