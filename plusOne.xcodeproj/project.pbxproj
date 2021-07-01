@@ -11,6 +11,7 @@
 		F948950326782D1B006F7E18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948950226782D1B006F7E18 /* Constants.swift */; };
 		F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */; };
 		F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */; };
+		F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */; };
 		F964EE9726741280007809B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* FeedViewController.swift */; };
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
 		F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* SingleTVCell.swift */; };
@@ -48,6 +49,7 @@
 		F948950226782D1B006F7E18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
 		F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
+		F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataServiceTests.swift; sourceTree = "<group>"; };
 		F964EE9626741280007809B0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
 		F964EE9B26741373007809B0 /* SingleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTVCell.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F95D847B268D04D2006452FA /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
 		F964EE9A2674133F007809B0 /* Single Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		F966CF59267BC1500058BA29 /* plusOneTests */ = {
 			isa = PBXGroup;
 			children = (
+				F95D847B268D04D2006452FA /* DataService */,
 				F966CF65267BD0B20058BA29 /* TestControllers */,
 				F966CF64267BD0A40058BA29 /* TestModels */,
 				F966CF5C267BC1500058BA29 /* Info.plist */,
@@ -400,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */,
 				F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */,
 				F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */,
 				F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */,

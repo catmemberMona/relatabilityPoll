@@ -8,12 +8,23 @@
 import UIKit
 
 class PollCollectionDataService: NSObject, UITableViewDelegate, UITableViewDataSource {
+    
+    var pollManager: PollManager?
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        guard let pollManager = pollManager else {
+            return 0
+        }
+        
+        return pollManager.visiblePolls.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
 
