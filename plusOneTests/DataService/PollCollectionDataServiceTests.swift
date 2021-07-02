@@ -49,7 +49,7 @@ class PollCollectionDataServiceTests: XCTestCase {
         XCTAssertEqual(collectionTableView.numberOfRows(inSection: 0), 3)
     }
     
-    func testTableViewSections_SectionOne_ReturnsVisiblePollsCount(){
+    func testTableViewSections_TogglePollVisibility_ReturnsVisiblePollsCount(){
         sut.pollManager?.addPoll(poll: pollOne)
         sut.pollManager?.addPoll(poll: pollTwo)
         sut.pollManager?.addPoll(poll: pollThree)
@@ -60,5 +60,4 @@ class PollCollectionDataServiceTests: XCTestCase {
         
         XCTAssertEqual(collectionTableView.numberOfRows(inSection: 0), 2)
     }
-
 }
