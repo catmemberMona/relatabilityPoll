@@ -24,12 +24,14 @@ class PollManager {
     }
     
     func toggleVisibility(id: Int) -> Poll {
-        let index = visiblePolls.firstIndex(where: { $0.id == id })
-        var poll = visiblePolls.remove(at: index!)
-    
-        poll.hidden = !poll.hidden
-        hiddenPolls.append(poll)
-        
-        return poll
+        do {
+            let index = try visiblePolls.firstIndex(where: { $0.id == id })
+            var poll = try visiblePolls.remove(at: index!)
+            poll.hidden = !poll.hidden
+            hiddenPolls.append(poll)
+            return poll
+        } catch {
+            print("Identifier doesn't exist")
+        }
     }
 }
