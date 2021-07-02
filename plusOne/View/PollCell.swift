@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SingleTVCell: UITableViewCell {
+class PollCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

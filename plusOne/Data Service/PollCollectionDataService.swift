@@ -20,7 +20,7 @@ class PollCollectionDataService: NSObject, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return PollCell()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

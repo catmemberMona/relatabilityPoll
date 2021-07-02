@@ -14,7 +14,7 @@
 		F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */; };
 		F964EE9726741280007809B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* FeedViewController.swift */; };
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
-		F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* SingleTVCell.swift */; };
+		F964EE9C26741373007809B0 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* PollCell.swift */; };
 		F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9E267437DF007809B0 /* typingAnimation.swift */; };
 		F966CF63267BC3DD0058BA29 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF62267BC3DD0058BA29 /* Poll.swift */; };
 		F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF66267BD0F80058BA29 /* PollStructTest.swift */; };
@@ -52,7 +52,7 @@
 		F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataServiceTests.swift; sourceTree = "<group>"; };
 		F964EE9626741280007809B0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
-		F964EE9B26741373007809B0 /* SingleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTVCell.swift; sourceTree = "<group>"; };
+		F964EE9B26741373007809B0 /* PollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCell.swift; sourceTree = "<group>"; };
 		F964EE9E267437DF007809B0 /* typingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typingAnimation.swift; sourceTree = "<group>"; };
 		F966CF58267BC1500058BA29 /* plusOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plusOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F966CF5C267BC1500058BA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 			children = (
 				F964EE9626741280007809B0 /* FeedViewController.swift */,
 				F964EE9826741337007809B0 /* SingleFeedTVC.swift */,
-				F964EE9B26741373007809B0 /* SingleTVCell.swift */,
 			);
 			path = "Single Feed";
 			sourceTree = "<group>";
@@ -233,6 +232,7 @@
 			children = (
 				F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */,
 				F96821D22670201500ED7C17 /* Main.storyboard */,
+				F964EE9B26741373007809B0 /* PollCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -434,7 +434,7 @@
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
 				F964EE9726741280007809B0 /* FeedViewController.swift in Sources */,
 				F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */,
-				F964EE9C26741373007809B0 /* SingleTVCell.swift in Sources */,
+				F964EE9C26741373007809B0 /* PollCell.swift in Sources */,
 				F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -526,10 +526,10 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Guest_TV_Cell_Id" rowHeight="241" id="8c6-K2-qDH">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Guest_TV_Cell_Id" rowHeight="241" id="8c6-K2-qDH" customClass="PollCell" customModule="plusOne" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="24.5" width="414" height="241"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8c6-K2-qDH" id="fqi-bI-aRY" customClass="SingleTVCell" customModule="plusOne" customModuleProvider="target">
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8c6-K2-qDH" id="fqi-bI-aRY" customClass="PollCell" customModule="plusOne" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
@@ -731,7 +731,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="dul-kL-mVw"/>
                             </scrollView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnK-0f-33m">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="search" id="AqB-YM-lfc"/>

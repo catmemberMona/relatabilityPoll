@@ -60,4 +60,13 @@ class PollCollectionDataServiceTests: XCTestCase {
         
         XCTAssertEqual(collectionTableView.numberOfRows(inSection: 0), 2)
     }
+    
+    // MARK: Cells
+    func testCell_RowAtIndex_ReturnsPollCell(){
+        sut.pollManager?.addPoll(poll: pollOne)
+        collectionTableView.reloadData()
+        
+        let cellQueried = collectionTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        XCTAssertTrue(cellQueried is PollCell)
+    }
 }
