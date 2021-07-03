@@ -85,5 +85,17 @@ class PollCollectionDataServiceTests: XCTestCase {
         
         XCTAssertTrue(mock.cellDequeuedProperly)
     }
+    
+    func testCell_Config_ShouldSetCellData(){
+        let mock = TableViewMock()
+        mock.dataSource = sut
+        mock.register(PollCellMock.self, forCellReuseIdentifier: K.pollCellId)
+        
+        sut.pollManager?.addPoll(poll: pollOne)
+        mock.reloadData()
+        
+        let cell = mock.cellForRow(at: IndexPath(row: 0, section: 0)) as! PollCellMock
+        XCTAssertEqual(cell.pollData, pollOne)
+    }
 }
 

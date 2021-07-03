@@ -18,4 +18,12 @@ extension PollCollectionDataServiceTests {
             return super.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         }
     }
+    
+    class PollCellMock: PollCell {
+        var pollData: Poll?
+        
+        override func configPollCell(poll: Poll){
+            pollData = poll
+        }
+    }
 }

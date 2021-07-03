@@ -20,6 +20,7 @@ class PollManager {
     }
     
     func pollAtIndex(id: Int)-> Poll {
+        // need to eventually change to getting visibile polls, hidden polls etc
         return polls[id]
     }
     
