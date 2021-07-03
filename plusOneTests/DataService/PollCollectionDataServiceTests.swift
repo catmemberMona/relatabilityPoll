@@ -13,6 +13,7 @@ class PollCollectionDataServiceTests: XCTestCase {
     var sut: PollCollectionDataService!
     var collectionTableView: UITableView!
     var feedVC: FeedViewController!
+    var tableViewMock: TableViewMock!
     
     let pollOne = Poll(id: 0, statement: "Feeling down on rainy days")
     let pollTwo = Poll(id: 1, statement: "Laughing at the pain from a massage")
@@ -22,6 +23,7 @@ class PollCollectionDataServiceTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         sut = PollCollectionDataService()
         sut.pollManager = PollManager()
+        tableViewMock = TableViewMock.initMock(dataSource: sut)
         
         feedVC = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: K.guestFeedVCId) as! FeedViewController)
         _ = feedVC.view
@@ -75,26 +77,18 @@ class PollCollectionDataServiceTests: XCTestCase {
     }
     
     func testCell_ShouldDequeueCell(){
-        let mock = TableViewMock()
-        mock.dataSource = sut
-        mock.register(PollCell.self, forCellReuseIdentifier: K.pollCellId)
-        
         sut.pollManager?.addPoll(poll: pollOne)
-        mock.reloadData()
-        _ = mock.cellForRow(at: IndexPath(row: 0, section: 0))
+        tableViewMock.reloadData()
+        _ = tableViewMock.cellForRow(at: IndexPath(row: 0, section: 0))
         
-        XCTAssertTrue(mock.cellDequeuedProperly)
+        XCTAssertTrue(tableViewMock.cellDequeuedProperly)
     }
     
     func testCell_Config_ShouldSetCellData(){
-        let mock = TableViewMock()
-        mock.dataSource = sut
-        mock.register(PollCellMock.self, forCellReuseIdentifier: K.pollCellId)
-        
         sut.pollManager?.addPoll(poll: pollOne)
-        mock.reloadData()
+        tableViewMock.reloadData()
         
-        let cell = mock.cellForRow(at: IndexPath(row: 0, section: 0)) as! PollCellMock
+        let cell = tableViewMock.cellForRow(at: IndexPath(row: 0, section: 0)) as! PollCellMock
         XCTAssertEqual(cell.pollData, pollOne)
     }
 }
