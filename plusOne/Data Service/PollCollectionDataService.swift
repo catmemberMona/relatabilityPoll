@@ -20,7 +20,8 @@ class PollCollectionDataService: NSObject, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return PollCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.pollCellId, for: indexPath)
+        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

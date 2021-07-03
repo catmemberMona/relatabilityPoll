@@ -12,6 +12,7 @@ class PollCollectionDataServiceTests: XCTestCase {
     
     var sut: PollCollectionDataService!
     var collectionTableView: UITableView!
+    var feedVC: FeedViewController!
     
     let pollOne = Poll(id: 0, statement: "Feeling down on rainy days")
     let pollTwo = Poll(id: 1, statement: "Laughing at the pain from a massage")
@@ -22,7 +23,10 @@ class PollCollectionDataServiceTests: XCTestCase {
         sut = PollCollectionDataService()
         sut.pollManager = PollManager()
         
-        collectionTableView = UITableView()
+        feedVC = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: K.guestFeedVCId) as! FeedViewController)
+        _ = feedVC.view
+        
+        collectionTableView = feedVC.feedTableView
         collectionTableView.dataSource = sut
         collectionTableView.delegate = sut
     }
@@ -69,4 +73,17 @@ class PollCollectionDataServiceTests: XCTestCase {
         let cellQueried = collectionTableView.cellForRow(at: IndexPath(row: 0, section: 0))
         XCTAssertTrue(cellQueried is PollCell)
     }
+    
+    func testCell_ShouldDequeueCell(){
+        let mock = TableViewMock()
+        mock.dataSource = sut
+        mock.register(PollCell.self, forCellReuseIdentifier: K.pollCellId)
+        
+        sut.pollManager?.addPoll(poll: pollOne)
+        mock.reloadData()
+        _ = mock.cellForRow(at: IndexPath(row: 0, section: 0))
+        
+        XCTAssertTrue(mock.cellDequeuedProperly)
+    }
 }
+
