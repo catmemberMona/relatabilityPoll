@@ -9,6 +9,8 @@ import UIKit
 
 class PollCell: UITableViewCell {
 
+    @IBOutlet weak var statementText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,7 +23,7 @@ class PollCell: UITableViewCell {
     }
     
     func configPollCell(poll: Poll){
-        
+        self.statementText.text = poll.statement
     }
 
 }

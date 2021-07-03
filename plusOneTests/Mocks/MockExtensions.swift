@@ -9,6 +9,7 @@ import UIKit
 @testable import plusOne
 
 extension PollCollectionDataServiceTests {
+    
     class TableViewMock: UITableView {
         var cellDequeuedProperly = false
         
@@ -35,5 +36,19 @@ extension PollCollectionDataServiceTests {
         override func configPollCell(poll: Poll){
             pollData = poll
         }
+    }
+}
+
+extension PollCellTests {
+    class MockCellDataSource: NSObject, UITableViewDataSource {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return 1
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            return UITableViewCell()
+        }
+        
+        
     }
 }

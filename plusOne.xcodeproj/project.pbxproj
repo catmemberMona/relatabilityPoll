@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		30085E26BFFCB92128D96EC2 /* Pods_plusOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72528A9305A3B06B2B311016 /* Pods_plusOne.framework */; };
 		F935FF1B268FEA3000AE306D /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935FF1A268FEA3000AE306D /* MockExtensions.swift */; };
+		F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935FF1D268FFB6100AE306D /* PollCellTests.swift */; };
 		F948950326782D1B006F7E18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948950226782D1B006F7E18 /* Constants.swift */; };
 		F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */; };
 		F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */; };
@@ -48,6 +49,7 @@
 		72528A9305A3B06B2B311016 /* Pods_plusOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plusOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE6EE73C714455D114F055A /* Pods-plusOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.debug.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.debug.xcconfig"; sourceTree = "<group>"; };
 		F935FF1A268FEA3000AE306D /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
+		F935FF1D268FFB6100AE306D /* PollCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCellTests.swift; sourceTree = "<group>"; };
 		F948950226782D1B006F7E18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
 		F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		F935FF1C268FFB3A00AE306D /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				F935FF1D268FFB6100AE306D /* PollCellTests.swift */,
+			);
+			path = TestViews;
+			sourceTree = "<group>";
+		};
 		F95D847B268D04D2006452FA /* DataService */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,11 +166,12 @@
 		F966CF59267BC1500058BA29 /* plusOneTests */ = {
 			isa = PBXGroup;
 			children = (
-				F935FF19268FE9FA00AE306D /* Mocks */,
+				F935FF1C268FFB3A00AE306D /* TestViews */,
 				F95D847B268D04D2006452FA /* DataService */,
+				F966CF5C267BC1500058BA29 /* Info.plist */,
+				F935FF19268FE9FA00AE306D /* Mocks */,
 				F966CF65267BD0B20058BA29 /* TestControllers */,
 				F966CF64267BD0A40058BA29 /* TestModels */,
-				F966CF5C267BC1500058BA29 /* Info.plist */,
 			);
 			path = plusOneTests;
 			sourceTree = "<group>";
@@ -424,6 +435,7 @@
 			files = (
 				F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */,
 				F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */,
+				F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */,
 				F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */,
 				F935FF1B268FEA3000AE306D /* MockExtensions.swift in Sources */,
 				F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */,
