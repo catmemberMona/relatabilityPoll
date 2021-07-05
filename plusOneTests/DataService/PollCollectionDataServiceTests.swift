@@ -44,13 +44,13 @@ class PollCollectionDataServiceTests: XCTestCase {
     }
 
     func testTableViewSections_SectionOne_ReturnsPollsToSeeCount() {
-        sut.pollManager?.addPoll(poll: pollOne)
-        sut.pollManager?.addPoll(poll: pollTwo)
+//        sut.pollManager?.addPoll(poll: pollOne)
+//        sut.pollManager?.addPoll(poll: pollTwo)
         
-        XCTAssertEqual(collectionTableView.numberOfRows(inSection: 0), 2)
-        
-        sut.pollManager?.addPoll(poll: pollThree)
-        collectionTableView.reloadData()
+//        XCTAssertEqual(collectionTableView.numberOfRows(inSection: 0), 2)
+//        
+//        sut.pollManager?.addPoll(poll: pollThree)
+//        collectionTableView.reloadData()
         
         XCTAssertEqual(collectionTableView.numberOfRows(inSection: 0), 3)
     }
