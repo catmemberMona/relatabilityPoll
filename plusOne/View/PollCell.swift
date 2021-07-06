@@ -7,8 +7,10 @@
 
 import UIKit
 
-class SingleTVCell: UITableViewCell {
+class PollCell: UITableViewCell {
 
+    @IBOutlet weak var statementText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +20,10 @@ class SingleTVCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configPollCell(poll: Poll){
+        self.statementText.text = poll.statement
     }
 
 }

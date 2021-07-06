@@ -20,16 +20,18 @@ class PollManager {
     }
     
     func pollAtIndex(id: Int)-> Poll {
+        // need to eventually change to getting visibile polls, hidden polls etc
         return polls[id]
     }
     
-    func toggleVisibility(id: Int) -> Poll {
-        let index = visiblePolls.firstIndex(where: { $0.id == id })
-        var poll = visiblePolls.remove(at: index!)
-    
-        poll.hidden = !poll.hidden
-        hiddenPolls.append(poll)
-        
-        return poll
+    func toggleVisibility(id: Int) -> Poll? {
+        if let index = visiblePolls.firstIndex(where: { $0.id == id }) {
+        var poll = visiblePolls.remove(at: index)
+            print("This is the poll that is returned:", poll)
+            poll.hidden = !poll.hidden
+            hiddenPolls.append(poll)
+            return poll
+        }
+        return nil
     }
 }
