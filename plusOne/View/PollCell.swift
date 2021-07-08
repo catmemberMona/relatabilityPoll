@@ -1,15 +1,17 @@
 //
-//  SingleTVCell.swift
+//  PollCell.swift
 //  plusOne
 //
-//  Created by mona zheng on 6/11/21.
+//  Created by mona zheng on 7/7/21.
 //
 
 import UIKit
 
 class PollCell: UITableViewCell {
-
+    
+    
     @IBOutlet weak var statementText: UILabel!
+    @IBOutlet weak var reactionsText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,7 @@ class PollCell: UITableViewCell {
     
     func configPollCell(poll: Poll){
         self.statementText.text = poll.statement
+        self.reactionsText.text = "\(poll.reactions) Users Reacted"
     }
-
+    
 }
