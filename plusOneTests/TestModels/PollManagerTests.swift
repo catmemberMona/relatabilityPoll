@@ -78,7 +78,15 @@ class PollManagerTests: XCTestCase {
         sut.addPoll(poll: testPoll)
         let poll = sut.toggleVisibility(id: 0)
         
-        XCTAssertEqual(poll.hidden, true)
+        XCTAssertEqual(poll!.hidden, true)
+    }
+    
+    func testToggle_PollExists_ReturnNil(){
+        sut.addPoll(poll: testPoll)
+        sut.addPoll(poll: testPoll2)
+        let poll = sut.toggleVisibility(id: 3)
+        
+        XCTAssertNil(poll)
     }
     
     // MARK: Equatable
@@ -104,6 +112,4 @@ class PollManagerTests: XCTestCase {
         
         XCTAssertTrue(hidden)
     }
-    
-
 }
