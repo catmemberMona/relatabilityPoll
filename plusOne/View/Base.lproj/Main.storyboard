@@ -584,6 +584,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="reactionsText" destination="L3D-eV-L6E" id="R3d-e0-vvB"/>
                                             <outlet property="statementText" destination="Nld-ud-v1w" id="Ble-xj-DQt"/>
                                         </connections>
                                     </tableViewCell>
@@ -699,7 +700,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="dul-kL-mVw"/>
                             </scrollView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnK-0f-33m">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="search" id="AqB-YM-lfc"/>

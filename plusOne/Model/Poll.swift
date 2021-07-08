@@ -11,12 +11,14 @@ struct Poll: Equatable {
     let id: Int
     var statement: String
     var hidden: Bool
+    var reactions: Int
     
     init(id:Int, statement:String) {
         // id will also be the same as index
         self.id = id
         self.statement = statement
-        self.hidden = false 
+        self.hidden = false
+        self.reactions = 0
     }
 }
  
