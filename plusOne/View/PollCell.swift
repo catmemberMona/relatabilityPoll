@@ -1,15 +1,15 @@
 //
-//  SingleTVCell.swift
+//  PollCell.swift
 //  plusOne
 //
-//  Created by mona zheng on 6/11/21.
+//  Created by mona zheng on 7/7/21.
 //
 
 import UIKit
 
 class PollCell: UITableViewCell {
-
-
+    
+    
     @IBOutlet weak var statementText: UILabel!
     
     override func awakeFromNib() {
@@ -26,5 +26,5 @@ class PollCell: UITableViewCell {
     func configPollCell(poll: Poll){
         self.statementText.text = poll.statement
     }
-
+    
 }
