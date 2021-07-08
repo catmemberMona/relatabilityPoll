@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30085E26BFFCB92128D96EC2 /* Pods_plusOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72528A9305A3B06B2B311016 /* Pods_plusOne.framework */; };
+		F907F30D269688180078ED18 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907F30B269688180078ED18 /* PollCell.swift */; };
 		F935FF1B268FEA3000AE306D /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935FF1A268FEA3000AE306D /* MockExtensions.swift */; };
 		F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935FF1D268FFB6100AE306D /* PollCellTests.swift */; };
 		F948950326782D1B006F7E18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948950226782D1B006F7E18 /* Constants.swift */; };
@@ -16,7 +17,6 @@
 		F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */; };
 		F964EE9726741280007809B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* FeedViewController.swift */; };
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
-		F964EE9C26741373007809B0 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9B26741373007809B0 /* PollCell.swift */; };
 		F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9E267437DF007809B0 /* typingAnimation.swift */; };
 		F966CF63267BC3DD0058BA29 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF62267BC3DD0058BA29 /* Poll.swift */; };
 		F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF66267BD0F80058BA29 /* PollStructTest.swift */; };
@@ -48,6 +48,7 @@
 		4CCCB27CCB24C2722DF2870F /* Pods-plusOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.release.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.release.xcconfig"; sourceTree = "<group>"; };
 		72528A9305A3B06B2B311016 /* Pods_plusOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plusOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE6EE73C714455D114F055A /* Pods-plusOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.debug.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.debug.xcconfig"; sourceTree = "<group>"; };
+		F907F30B269688180078ED18 /* PollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCell.swift; sourceTree = "<group>"; };
 		F935FF1A268FEA3000AE306D /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
 		F935FF1D268FFB6100AE306D /* PollCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCellTests.swift; sourceTree = "<group>"; };
 		F948950226782D1B006F7E18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataServiceTests.swift; sourceTree = "<group>"; };
 		F964EE9626741280007809B0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
-		F964EE9B26741373007809B0 /* PollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCell.swift; sourceTree = "<group>"; };
 		F964EE9E267437DF007809B0 /* typingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typingAnimation.swift; sourceTree = "<group>"; };
 		F966CF58267BC1500058BA29 /* plusOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plusOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F966CF5C267BC1500058BA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 			children = (
 				F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */,
 				F96821D22670201500ED7C17 /* Main.storyboard */,
-				F964EE9B26741373007809B0 /* PollCell.swift */,
+				F907F30B269688180078ED18 /* PollCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,9 +456,9 @@
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,
 				F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */,
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
+				F907F30D269688180078ED18 /* PollCell.swift in Sources */,
 				F964EE9726741280007809B0 /* FeedViewController.swift in Sources */,
 				F96821CF2670201500ED7C17 /* SceneDelegate.swift in Sources */,
-				F964EE9C26741373007809B0 /* PollCell.swift in Sources */,
 				F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

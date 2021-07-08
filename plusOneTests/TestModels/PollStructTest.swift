@@ -9,7 +9,7 @@ import XCTest
 
 @testable import plusOne
 class PollStructTest: XCTestCase {
-    let examplePoll = Poll(id: 0, statement: "Farted at least once on the subway.")
+    let testPoll = Poll(id: 0, statement: "Farted at least once on the subway.")
     
 
     override func setUpWithError() throws {
@@ -22,21 +22,22 @@ class PollStructTest: XCTestCase {
     
     // MARK: test inital Values present
     func testInit_PollWithStatement(){
-        let testPoll = examplePoll
-        
         XCTAssertNotNil(testPoll)
         XCTAssertEqual(testPoll.statement, "Farted at least once on the subway.")
     }
     
     func testInit_PollWithId(){
-        let testPoll = examplePoll
         XCTAssertEqual(testPoll.id, 0)
     }
     
     func testInit_PollWithHidden(){
-        let testPoll = examplePoll
         XCTAssertNotNil(testPoll.hidden)
         XCTAssertEqual(testPoll.hidden, false)
+    }
+    
+    func testInit_PollWithReactions(){
+        XCTAssertNotNil(testPoll.reactions)
+        XCTAssertEqual(testPoll.reactions, 0)
     }
     
     
