@@ -15,8 +15,9 @@ extension PollCollectionDataServiceTests {
         
         class func initMock(dataSource: PollCollectionDataService)-> TableViewMock {
             // make a table view frame because of error that may appear when testing section two
-            let mock = TableViewMock(frame: CGRect.init(x: 0, y: 0, width: 300, height: 500), style: .plain)
-            
+//            let mock = TableViewMock(frame: CGRect.init(x: 0, y: 0, width: 300, height: 500), style: .plain)
+//
+            let mock = TableViewMock()
             mock.dataSource = dataSource
             mock.register(PollCellMock.self, forCellReuseIdentifier: K.pollCellId)
             
