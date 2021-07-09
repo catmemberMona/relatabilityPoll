@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import GoogleSignIn
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -29,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
       let familyName = user.profile.familyName
       let email = user.profile.email
      
+        
         
         // redirects to signed in user's view controller
         let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -61,7 +63,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        // FireBase Database
+        FirebaseApp.configure()
+        let db = Firestore.firestore()
+
+        print("THIS IS THE DATABASE:", db) // silence warning
         // Initialize sign-in
          GIDSignIn.sharedInstance().clientID = apiKey
          GIDSignIn.sharedInstance().delegate = self

@@ -7,5 +7,12 @@ target 'plusOne' do
 
   # Pods for plusOne
   pod 'GoogleSignIn'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Analytics'
+end
+  
+target 'plusOneTests' do
+  inherit! :search_paths
+  pod 'Firebase/Core'
 	
 end
