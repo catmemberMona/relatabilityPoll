@@ -56,14 +56,14 @@ class PollManagerTests: XCTestCase {
         XCTAssertEqual(testPoll.statement, pollQueried.statement)
     }
     
-    // MARK: Synced id and index
-    func testSynced_PollIdAndIndex_ReturnTrue(){
-        let pollId = testPoll.id
-
-        sut.addPoll(poll: testPoll)
-        let queryPollById = sut.pollAtIndex(id: pollId)
-        XCTAssertEqual(testPoll.statement, queryPollById.statement)
-    }
+//    // MARK: Synced id and index
+//    func testSynced_PollIdAndIndex_ReturnTrue(){
+//        let pollId = testPoll.id
+//
+//        sut.addPoll(poll: testPoll)
+//        let queryPollById = sut.pollAtIndex(id: pollId)
+//        XCTAssertEqual(testPoll.statement, queryPollById.statement)
+//    }
     
     // MARK: New poll is visible
     func testAdd_VisiblePolls_ReturnOne(){
