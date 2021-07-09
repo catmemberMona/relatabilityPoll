@@ -311,6 +311,7 @@
 				F966CF54267BC1500058BA29 /* Sources */,
 				F966CF55267BC1500058BA29 /* Frameworks */,
 				F966CF56267BC1500058BA29 /* Resources */,
+				832E3224F542A1167FFEDA2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,6 +440,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plusOne/Pods-plusOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		832E3224F542A1167FFEDA2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B556643654EC4AA7B88FA4C0 /* [CP] Copy Pods Resources */ = {
