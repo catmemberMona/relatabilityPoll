@@ -14,6 +14,8 @@
 		F948950326782D1B006F7E18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948950226782D1B006F7E18 /* Constants.swift */; };
 		F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */; };
 		F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */; };
+		F94D8BDC2698F5160006AD49 /* UserClassTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D8BDB2698F5160006AD49 /* UserClassTest.swift */; };
+		F94D8BDE2698F63E0006AD49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D8BDD2698F63E0006AD49 /* User.swift */; };
 		F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */; };
 		F964EE9726741280007809B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9626741280007809B0 /* FeedViewController.swift */; };
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
@@ -54,6 +56,8 @@
 		F948950226782D1B006F7E18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F94A74BB2672FE6E00F5BA4D /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
 		F94A74BD2672FEBF00F5BA4D /* AccessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessAccountViewController.swift; sourceTree = "<group>"; };
+		F94D8BDB2698F5160006AD49 /* UserClassTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClassTest.swift; sourceTree = "<group>"; };
+		F94D8BDD2698F63E0006AD49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F95D847C268D0507006452FA /* PollCollectionDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataServiceTests.swift; sourceTree = "<group>"; };
 		F964EE9626741280007809B0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F964EE9826741337007809B0 /* SingleFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFeedTVC.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 			children = (
 				F966CF66267BD0F80058BA29 /* PollStructTest.swift */,
 				F966CF68267BD1B40058BA29 /* PollManagerTests.swift */,
+				F94D8BDB2698F5160006AD49 /* UserClassTest.swift */,
 			);
 			path = TestModels;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 			children = (
 				F966CF62267BC3DD0058BA29 /* Poll.swift */,
 				F966CF6A267BD27F0058BA29 /* PollManager.swift */,
+				F94D8BDD2698F63E0006AD49 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94D8BDC2698F5160006AD49 /* UserClassTest.swift in Sources */,
 				F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */,
 				F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */,
 				F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */,
@@ -454,6 +461,7 @@
 				F966CF63267BC3DD0058BA29 /* Poll.swift in Sources */,
 				F966CF6B267BD27F0058BA29 /* PollManager.swift in Sources */,
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,
+				F94D8BDE2698F63E0006AD49 /* User.swift in Sources */,
 				F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */,
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
 				F907F30D269688180078ED18 /* PollCell.swift in Sources */,
