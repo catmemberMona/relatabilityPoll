@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30085E26BFFCB92128D96EC2 /* Pods_plusOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72528A9305A3B06B2B311016 /* Pods_plusOne.framework */; };
+		996BCD5EAE7CDA295D2675CD /* Pods_plusOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A40A8EAB50FB1196288C543 /* Pods_plusOne.framework */; };
+		DF6E4349B41FAE95434345F5 /* libPods-plusOneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD04A76E5C8CC49AAB56651A /* libPods-plusOneTests.a */; };
 		F907F30D269688180078ED18 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907F30B269688180078ED18 /* PollCell.swift */; };
 		F935FF1B268FEA3000AE306D /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935FF1A268FEA3000AE306D /* MockExtensions.swift */; };
 		F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935FF1D268FFB6100AE306D /* PollCellTests.swift */; };
@@ -29,6 +30,8 @@
 		F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */; };
 		F96821D92670201700ED7C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96821D82670201700ED7C17 /* Assets.xcassets */; };
 		F96821DC2670201700ED7C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96821DA2670201700ED7C17 /* LaunchScreen.storyboard */; };
+		F9683EEC2697B5630079A17E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9683EEB2697B5630079A17E /* GoogleService-Info.plist */; };
+		F9683EF02697B7190079A17E /* FireStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9683EEF2697B7190079A17E /* FireStoreTests.swift */; };
 		F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = F96A24552676885700E4630E /* apps.googleusercontent.com.plist */; };
 		F96FDA57268BE415000184CA /* PollCollectionDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96FDA56268BE415000184CA /* PollCollectionDataService.swift */; };
 		F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */; };
@@ -46,8 +49,10 @@
 
 /* Begin PBXFileReference section */
 		4CCCB27CCB24C2722DF2870F /* Pods-plusOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.release.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.release.xcconfig"; sourceTree = "<group>"; };
-		72528A9305A3B06B2B311016 /* Pods_plusOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plusOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A40A8EAB50FB1196288C543 /* Pods_plusOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plusOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		852C8E0A98C141311C58A1E9 /* Pods-plusOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOneTests.release.xcconfig"; path = "Target Support Files/Pods-plusOneTests/Pods-plusOneTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DE6EE73C714455D114F055A /* Pods-plusOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.debug.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.debug.xcconfig"; sourceTree = "<group>"; };
+		BD2AA8565AB15B18F87FE7F8 /* Pods-plusOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOneTests.debug.xcconfig"; path = "Target Support Files/Pods-plusOneTests/Pods-plusOneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F907F30B269688180078ED18 /* PollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCell.swift; sourceTree = "<group>"; };
 		F935FF1A268FEA3000AE306D /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
 		F935FF1D268FFB6100AE306D /* PollCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCellTests.swift; sourceTree = "<group>"; };
@@ -73,9 +78,12 @@
 		F96821D82670201700ED7C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F96821DB2670201700ED7C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F96821DD2670201700ED7C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9683EEB2697B5630079A17E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9683EEF2697B7190079A17E /* FireStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreTests.swift; sourceTree = "<group>"; };
 		F96A24552676885700E4630E /* apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.googleusercontent.com.plist; sourceTree = "<group>"; };
 		F96FDA56268BE415000184CA /* PollCollectionDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataService.swift; sourceTree = "<group>"; };
 		F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
+		FD04A76E5C8CC49AAB56651A /* libPods-plusOneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-plusOneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6E4349B41FAE95434345F5 /* libPods-plusOneTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30085E26BFFCB92128D96EC2 /* Pods_plusOne.framework in Frameworks */,
+				996BCD5EAE7CDA295D2675CD /* Pods_plusOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +111,8 @@
 			children = (
 				9DE6EE73C714455D114F055A /* Pods-plusOne.debug.xcconfig */,
 				4CCCB27CCB24C2722DF2870F /* Pods-plusOne.release.xcconfig */,
+				BD2AA8565AB15B18F87FE7F8 /* Pods-plusOneTests.debug.xcconfig */,
+				852C8E0A98C141311C58A1E9 /* Pods-plusOneTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -109,7 +120,8 @@
 		BA6AC06359E0390A525B503E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				72528A9305A3B06B2B311016 /* Pods_plusOne.framework */,
+				FD04A76E5C8CC49AAB56651A /* libPods-plusOneTests.a */,
+				6A40A8EAB50FB1196288C543 /* Pods_plusOne.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +162,7 @@
 		F964EE9D267437BF007809B0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F948950226782D1B006F7E18 /* Constants.swift */,
 				F964EEA0267437EC007809B0 /* Animations */,
 			);
 			path = Utils;
@@ -166,6 +179,7 @@
 		F966CF59267BC1500058BA29 /* plusOneTests */ = {
 			isa = PBXGroup;
 			children = (
+				F9683EED2697B6C80079A17E /* TestFirebase */,
 				F935FF1C268FFB3A00AE306D /* TestViews */,
 				F95D847B268D04D2006452FA /* DataService */,
 				F966CF5C267BC1500058BA29 /* Info.plist */,
@@ -216,6 +230,9 @@
 		F96821CB2670201500ED7C17 /* plusOne */ = {
 			isa = PBXGroup;
 			children = (
+				F96821DD2670201700ED7C17 /* Info.plist */,
+				F9683EEB2697B5630079A17E /* GoogleService-Info.plist */,
+				F96A24552676885700E4630E /* apps.googleusercontent.com.plist */,
 				F96FDA55268BE3D4000184CA /* Data Service */,
 				F964EE9D267437BF007809B0 /* Utils */,
 				F9868E46267059A20079A542 /* Controller */,
@@ -224,12 +241,25 @@
 				F96821CC2670201500ED7C17 /* AppDelegate.swift */,
 				F96821CE2670201500ED7C17 /* SceneDelegate.swift */,
 				F96821D82670201700ED7C17 /* Assets.xcassets */,
-				F96821DD2670201700ED7C17 /* Info.plist */,
 				F96821D52670201500ED7C17 /* plusOne.xcdatamodeld */,
-				F948950226782D1B006F7E18 /* Constants.swift */,
-				F96A24552676885700E4630E /* apps.googleusercontent.com.plist */,
 			);
 			path = plusOne;
+			sourceTree = "<group>";
+		};
+		F9683EED2697B6C80079A17E /* TestFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				F9683EEE2697B6E80079A17E /* TestFireStore */,
+			);
+			path = TestFirebase;
+			sourceTree = "<group>";
+		};
+		F9683EEE2697B6E80079A17E /* TestFireStore */ = {
+			isa = PBXGroup;
+			children = (
+				F9683EEF2697B7190079A17E /* FireStoreTests.swift */,
+			);
+			path = TestFireStore;
 			sourceTree = "<group>";
 		};
 		F96FDA55268BE3D4000184CA /* Data Service */ = {
@@ -277,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F966CF5F267BC1500058BA29 /* Build configuration list for PBXNativeTarget "plusOneTests" */;
 			buildPhases = (
+				17AAD4C626023A3A0CDD6172 /* [CP] Check Pods Manifest.lock */,
 				F966CF54267BC1500058BA29 /* Sources */,
 				F966CF55267BC1500058BA29 /* Frameworks */,
 				F966CF56267BC1500058BA29 /* Resources */,
+				832E3224F542A1167FFEDA2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,8 +331,8 @@
 				F96821C52670201500ED7C17 /* Sources */,
 				F96821C62670201500ED7C17 /* Frameworks */,
 				F96821C72670201500ED7C17 /* Resources */,
-				5FA9716FBD637EF9FBD86506 /* [CP] Embed Pods Frameworks */,
 				B556643654EC4AA7B88FA4C0 /* [CP] Copy Pods Resources */,
+				6B0539C6649FE36557AE5E15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,6 +394,7 @@
 			files = (
 				F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */,
 				F96821DC2670201700ED7C17 /* LaunchScreen.storyboard in Resources */,
+				F9683EEC2697B5630079A17E /* GoogleService-Info.plist in Resources */,
 				F96821D92670201700ED7C17 /* Assets.xcassets in Resources */,
 				F96821D42670201500ED7C17 /* Main.storyboard in Resources */,
 			);
@@ -370,7 +403,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5FA9716FBD637EF9FBD86506 /* [CP] Embed Pods Frameworks */ = {
+		17AAD4C626023A3A0CDD6172 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plusOneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B0539C6649FE36557AE5E15 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,6 +440,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plusOne/Pods-plusOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		832E3224F542A1167FFEDA2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B556643654EC4AA7B88FA4C0 /* [CP] Copy Pods Resources */ = {
@@ -433,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9683EF02697B7190079A17E /* FireStoreTests.swift in Sources */,
 				F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */,
 				F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */,
 				F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */,
@@ -495,6 +568,7 @@
 /* Begin XCBuildConfiguration section */
 		F966CF60267BC1500058BA29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD2AA8565AB15B18F87FE7F8 /* Pods-plusOneTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +590,7 @@
 		};
 		F966CF61267BC1500058BA29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852C8E0A98C141311C58A1E9 /* Pods-plusOneTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +734,30 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSD89CWF5Y;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
 				INFOPLIST_FILE = plusOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -680,6 +779,30 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSD89CWF5Y;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil/absl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+				);
 				INFOPLIST_FILE = plusOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

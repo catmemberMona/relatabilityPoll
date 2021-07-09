@@ -176,13 +176,39 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC-framework/openssl_grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCore-framework/FirebaseCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics-framework/FirebaseCoreDiagnostics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseFirestore-framework/FirebaseFirestore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleDataTransport-framework/GoogleDataTransport.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities-00567490/GoogleUtilities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC-framework/FBLPromises.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/abseil-framework/absl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-C++-framework/grpcpp.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core-framework/grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library-framework/leveldb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb-framework/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC-framework/openssl_grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCore-framework/FirebaseCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics-framework/FirebaseCoreDiagnostics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseFirestore-framework/FirebaseFirestore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleDataTransport-framework/GoogleDataTransport.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities-00567490/GoogleUtilities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC-framework/FBLPromises.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/abseil-framework/absl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-C++-framework/grpcpp.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core-framework/grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library-framework/leveldb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb-framework/nanopb.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
