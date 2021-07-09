@@ -56,14 +56,14 @@ class PollManagerTests: XCTestCase {
         XCTAssertEqual(testPoll.statement, pollQueried.statement)
     }
     
-    // MARK: Synced id and index
-    func testSynced_PollIdAndIndex_ReturnTrue(){
-        let pollId = testPoll.id
-
-        sut.addPoll(poll: testPoll)
-        let queryPollById = sut.pollAtIndex(id: pollId)
-        XCTAssertEqual(testPoll.statement, queryPollById.statement)
-    }
+//    // MARK: Synced id and index
+//    func testSynced_PollIdAndIndex_ReturnTrue(){
+//        let pollId = testPoll.id
+//
+//        sut.addPoll(poll: testPoll)
+//        let queryPollById = sut.pollAtIndex(id: pollId)
+//        XCTAssertEqual(testPoll.statement, queryPollById.statement)
+//    }
     
     // MARK: New poll is visible
     func testAdd_VisiblePolls_ReturnOne(){
@@ -111,5 +111,10 @@ class PollManagerTests: XCTestCase {
         let hidden = sut.hiddenPolls.contains(testPoll)
         
         XCTAssertTrue(hidden)
+    }
+    
+    func testReactions_AddPollWithReactionParameter_ReturnsTen(){
+        sut.addPoll(poll: Poll(id: 0, statement: "Gave birth.", reactions: 10))
+        XCTAssertEqual(sut.polls[0].reactions, 10)
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleSignIn
+import FirebaseFirestore
 
 class FeedViewController: UIViewController {
 
@@ -14,6 +15,7 @@ class FeedViewController: UIViewController {
     @IBOutlet var dataService: PollCollectionDataService!
     
     var pollManager = PollManager()
+    var db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,20 +25,29 @@ class FeedViewController: UIViewController {
         
         dataService.pollManager = pollManager
         
-        // DUMMY POLLS
-        let pollOne = Poll(id: 0, statement: "Feeling down on rainy days")
-        let pollTwo = Poll(id: 1, statement: "Laughing at the pain from a massage")
-        let pollThree = Poll(id: 2, statement: "Spewed liquid out of my mouth")
-        let pollFour = Poll(id: 3, statement: "Eating is enjoyable")
-        let pollFive = Poll(id: 4, statement: "Looking at feet turns me on")
-        dataService.pollManager?.addPoll(poll: pollOne)
-        dataService.pollManager?.addPoll(poll: pollTwo)
-        dataService.pollManager?.addPoll(poll: pollThree)
-        dataService.pollManager?.addPoll(poll: pollFour)
-        dataService.pollManager?.addPoll(poll: pollFive)
-        feedTableView.reloadData()
+        self.loadPolls()
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
+    }
+    
+    func loadPolls() {
+        db.collection(K.FStore.pollCollection).getDocuments {(querySnapshot, error) in
+            if let e = error {
+                print("Could not retrieve data from database with error: \(e)")
+            } else {
+                print("Has Snapshots")
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        if let statement = data[K.FStore.Poll.statement] as? String, let id = data[K.FStore.Poll.id] as? Int, let reactions = data[K.FStore.Poll.reactions] as? Int {
+                            self.dataService.pollManager?.addPoll(poll: Poll(id: id, statement: statement, reactions: reactions))
+                            self.feedTableView.reloadData()
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
     
 

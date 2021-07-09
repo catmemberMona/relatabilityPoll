@@ -16,5 +16,8 @@ target 'plusOne' do
 
   # Pods for plusOne
   pod 'GoogleSignIn'
+  pod 'FirebaseCore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
+  pod 'FirebaseFirestore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
+
 	
 end
