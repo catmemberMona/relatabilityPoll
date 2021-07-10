@@ -7,7 +7,7 @@
 
 import UIKit
 import GoogleSignIn
-import FirebaseFirestore
+import Firebase
 
 class FeedViewController: UIViewController {
 

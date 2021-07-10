@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A9A92E0C1B3F198488B66BA /* libPods-plusOneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04BCA53C9235E7BE9D40845 /* libPods-plusOneTests.a */; };
 		30085E26BFFCB92128D96EC2 /* Pods_plusOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72528A9305A3B06B2B311016 /* Pods_plusOne.framework */; };
 		F907F30D269688180078ED18 /* PollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907F30B269688180078ED18 /* PollCell.swift */; };
 		F935FF1B268FEA3000AE306D /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F935FF1A268FEA3000AE306D /* MockExtensions.swift */; };
@@ -46,9 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3091F5FF46915CCE6F18B5C8 /* Pods-plusOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOneTests.release.xcconfig"; path = "Target Support Files/Pods-plusOneTests/Pods-plusOneTests.release.xcconfig"; sourceTree = "<group>"; };
 		4CCCB27CCB24C2722DF2870F /* Pods-plusOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.release.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.release.xcconfig"; sourceTree = "<group>"; };
+		598C371462708BDCA8E24B1A /* Pods-plusOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOneTests.debug.xcconfig"; path = "Target Support Files/Pods-plusOneTests/Pods-plusOneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		72528A9305A3B06B2B311016 /* Pods_plusOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plusOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE6EE73C714455D114F055A /* Pods-plusOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plusOne.debug.xcconfig"; path = "Target Support Files/Pods-plusOne/Pods-plusOne.debug.xcconfig"; sourceTree = "<group>"; };
+		F04BCA53C9235E7BE9D40845 /* libPods-plusOneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-plusOneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F907F30B269688180078ED18 /* PollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCell.swift; sourceTree = "<group>"; };
 		F935FF1A268FEA3000AE306D /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
 		F935FF1D268FFB6100AE306D /* PollCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCellTests.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9A92E0C1B3F198488B66BA /* libPods-plusOneTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,8 @@
 			children = (
 				9DE6EE73C714455D114F055A /* Pods-plusOne.debug.xcconfig */,
 				4CCCB27CCB24C2722DF2870F /* Pods-plusOne.release.xcconfig */,
+				598C371462708BDCA8E24B1A /* Pods-plusOneTests.debug.xcconfig */,
+				3091F5FF46915CCE6F18B5C8 /* Pods-plusOneTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				72528A9305A3B06B2B311016 /* Pods_plusOne.framework */,
+				F04BCA53C9235E7BE9D40845 /* libPods-plusOneTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -288,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F966CF5F267BC1500058BA29 /* Build configuration list for PBXNativeTarget "plusOneTests" */;
 			buildPhases = (
+				BD0B3CDC8C08988C8D175A31 /* [CP] Check Pods Manifest.lock */,
 				F966CF54267BC1500058BA29 /* Sources */,
 				F966CF55267BC1500058BA29 /* Frameworks */,
 				F966CF56267BC1500058BA29 /* Resources */,
+				758436FE7DDC14603264C2A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -399,6 +409,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plusOne/Pods-plusOne-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		758436FE7DDC14603264C2A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plusOneTests/Pods-plusOneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B556643654EC4AA7B88FA4C0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +441,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plusOne/Pods-plusOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0B3CDC8C08988C8D175A31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plusOneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1F38A1AFEC8CBE37D1AE71B /* [CP] Check Pods Manifest.lock */ = {
@@ -507,6 +556,7 @@
 /* Begin XCBuildConfiguration section */
 		F966CF60267BC1500058BA29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 598C371462708BDCA8E24B1A /* Pods-plusOneTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +578,7 @@
 		};
 		F966CF61267BC1500058BA29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3091F5FF46915CCE6F18B5C8 /* Pods-plusOneTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
