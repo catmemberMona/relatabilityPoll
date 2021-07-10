@@ -228,9 +228,6 @@ PODS:
     - FirebaseAuth (~> 8.3.0)
   - Firebase/CoreOnly (8.3.0):
     - FirebaseCore (= 8.3.0)
-  - Firebase/Firestore (8.3.0):
-    - Firebase/CoreOnly
-    - FirebaseFirestore (~> 8.3.0)
   - FirebaseAuth (8.3.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
@@ -318,7 +315,6 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Auth
-  - Firebase/Firestore
   - FirebaseCore (from `https://github.com/firebase/firebase-ios-sdk.git`, branch `master`)
   - FirebaseFirestore (from `https://github.com/firebase/firebase-ios-sdk.git`, branch `master`)
   - GoogleSignIn
@@ -378,6 +374,6 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 493ef510c51daf10dbb2a4f54435e16700da5c9c
+PODFILE CHECKSUM: c017211385b040dd0dafd65b014772735cc39443
 
 COCOAPODS: 1.10.1

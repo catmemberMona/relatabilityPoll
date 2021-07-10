@@ -25,5 +25,6 @@ end
 
 target 'plusOneTests' do
   inherit! :search_paths
-  pod 'Firebase/Firestore'
+  pod 'FirebaseCore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
+  pod 'FirebaseFirestore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
 end
