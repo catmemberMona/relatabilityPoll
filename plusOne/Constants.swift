@@ -14,8 +14,13 @@ struct K {
     static let firstDecisionVC = "First_Decision"
     static let pollCellId = "Poll_Cell_Id"
     
+    struct User {
+        static let email = "email"
+    }
+    
     struct FStore {
         static let pollCollection = "polls"
+        static let usersCollection = "users"
         
         struct Poll {
             static let id = "id"
