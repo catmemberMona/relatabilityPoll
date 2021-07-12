@@ -13,12 +13,12 @@ struct Poll: Equatable {
     var hidden: Bool
     var reactions: Int
     
-    init(id:Int, statement:String) {
+    init(id:Int, statement:String, reactions: Int = 0) {
         // id will also be the same as index
         self.id = id
         self.statement = statement
         self.hidden = false
-        self.reactions = 0
+        self.reactions = reactions
     }
 }
  
