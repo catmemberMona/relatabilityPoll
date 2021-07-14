@@ -56,12 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             
             if let user = querySnapshot, (querySnapshot?.documents.count)! > 0 {
-                for document in user.documents {
-                    print("\(document.documentID) => \(document.data())")
-                }
+                let document = user.documents[0]
+                User.email = (document.data()[K.User.email] as! String)
             } else {
                 // create new user instance
-                _ = User(email: email, tokenId: tokenId)
+                User.email = email
                 db.collection(K.FStore.usersCollection).document().setData([
                     K.User.email : email
                 ]) { err in
