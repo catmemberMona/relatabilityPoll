@@ -8,11 +8,11 @@
 import Foundation
 
 class User {
-    var email: String!
-    var tokenId: String!
+    static var email: String!
+    static var tokenId: String!
     
     init(email: String, tokenId: String) {
-        self.email = email
-        self.tokenId = tokenId
+        User.email = email
+        User.tokenId = tokenId
     }
 }

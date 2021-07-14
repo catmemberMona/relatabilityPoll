@@ -23,11 +23,11 @@ class UserClassTest: XCTestCase {
     // MARK: Inital values
     func testInit_UserWithEmail(){
         XCTAssertNotNil(user)
-        XCTAssertEqual(user.email, "test@1.com")
+        XCTAssertEqual(User.email, "test@1.com")
     }
     
     func testInit_UserWithTokenId(){
-        XCTAssertNotNil(user.tokenId)
+        XCTAssertNotNil(User.tokenId)
     }
 
 }
