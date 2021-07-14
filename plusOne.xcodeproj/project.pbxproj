@@ -35,6 +35,7 @@
 		F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = F96A24552676885700E4630E /* apps.googleusercontent.com.plist */; };
 		F96FDA57268BE415000184CA /* PollCollectionDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96FDA56268BE415000184CA /* PollCollectionDataService.swift */; };
 		F971E130269E9C3F00DBCB25 /* UserChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E12F269E9C3F00DBCB25 /* UserChoice.swift */; };
+		F971E132269EAE2F00DBCB25 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E131269EAE2F00DBCB25 /* Choice.swift */; };
 		F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		F96A24552676885700E4630E /* apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.googleusercontent.com.plist; sourceTree = "<group>"; };
 		F96FDA56268BE415000184CA /* PollCollectionDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataService.swift; sourceTree = "<group>"; };
 		F971E12F269E9C3F00DBCB25 /* UserChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChoice.swift; sourceTree = "<group>"; };
+		F971E131269EAE2F00DBCB25 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -273,6 +275,7 @@
 				F966CF62267BC3DD0058BA29 /* Poll.swift */,
 				F966CF6A267BD27F0058BA29 /* PollManager.swift */,
 				F94D8BDD2698F63E0006AD49 /* User.swift */,
+				F971E131269EAE2F00DBCB25 /* Choice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				F966CF6B267BD27F0058BA29 /* PollManager.swift in Sources */,
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,
 				F94D8BDE2698F63E0006AD49 /* User.swift in Sources */,
+				F971E132269EAE2F00DBCB25 /* Choice.swift in Sources */,
 				F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */,
 				F96821D72670201500ED7C17 /* plusOne.xcdatamodeld in Sources */,
 				F907F30D269688180078ED18 /* PollCell.swift in Sources */,

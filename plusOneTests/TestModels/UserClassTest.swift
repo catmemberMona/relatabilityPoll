@@ -45,9 +45,9 @@ class UserClassTest: XCTestCase {
     }
     
     func testArray_AppendReactedToPollsArrayWithDictionary_ReturnCountOne(){
-        User.reacted.append(["id": 0, "userChoice": UserChoice.relatable.rawValue])
+        let pollChoiceInfo = Choice(pollId: 0, userChoice: UserChoice.relatable.rawValue)
+        User.savePollIdAndUserChoiceInfo(choiceInfo: pollChoiceInfo)
         XCTAssertEqual(User.reacted.count, 1)
-        
     }
     
 }

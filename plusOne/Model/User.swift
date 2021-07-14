@@ -10,6 +10,12 @@ import Foundation
 class User {
     static var email: String!
     static var tokenId: String!
-    static var reacted: [[String:Int]] = []
+    static var reacted: [Choice] = []
+    
+    static func savePollIdAndUserChoiceInfo(choiceInfo: Choice){
+        User.reacted.append(choiceInfo)
+        
+        // save/update info to database
+    }
     
 }
