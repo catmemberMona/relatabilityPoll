@@ -9,8 +9,6 @@ import XCTest
 @testable import plusOne
 
 class UserClassTest: XCTestCase {
-    
-    var user = User(email: "test@1.com", tokenId: "I'm the id token")
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,12 +20,19 @@ class UserClassTest: XCTestCase {
     
     // MARK: Inital values
     func testInit_UserWithEmail(){
-        XCTAssertNotNil(user)
+        User.email = "test@1.com"
         XCTAssertEqual(User.email, "test@1.com")
     }
     
     func testInit_UserWithTokenId(){
+        User.tokenId = "some token id"
         XCTAssertNotNil(User.tokenId)
+    }
+    
+    func testInit_UserWithReactedToPollsArray(){
+        User.reacted.append(["id": 0, "userChoice": UserChoice.relatable.rawValue])
+        XCTAssertEqual(User.reacted.count, 1)
+        
     }
 
 }

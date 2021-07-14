@@ -10,5 +10,6 @@ import Foundation
 class User {
     static var email: String!
     static var tokenId: String!
+    static var reacted: [[String:Int]] = []
     
 }
