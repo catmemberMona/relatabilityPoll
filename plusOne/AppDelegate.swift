@@ -56,13 +56,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             
             if let user = querySnapshot, (querySnapshot?.documents.count)! > 0 {
+                // retrieve user's info that was previously saved from previous log in
                 let document = user.documents[0]
                 User.email = (document.data()[K.User.email] as! String)
+                
+                let choices = document.data()[K.User.reacted] as! Array<Choice>
+                for choice in choices {
+                    User.savePollIdAndUserChoiceInfo(choiceInfo: choice)
+                }
             } else {
-                // create new user instance
+                // save new user info
                 User.email = email
                 db.collection(K.FStore.usersCollection).document().setData([
-                    K.User.email : email
+                    K.User.email : email,
+                    K.User.reacted : []
                 ]) { err in
                     if let err = err {
                         print("Error writing document: \(err)")

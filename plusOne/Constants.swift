@@ -16,6 +16,7 @@ struct K {
     
     struct User {
         static let email = "email"
+        static let reacted = "reacted"
     }
     
     struct FStore {
