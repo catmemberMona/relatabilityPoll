@@ -36,6 +36,7 @@
 		F96FDA57268BE415000184CA /* PollCollectionDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96FDA56268BE415000184CA /* PollCollectionDataService.swift */; };
 		F971E130269E9C3F00DBCB25 /* UserChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E12F269E9C3F00DBCB25 /* UserChoice.swift */; };
 		F971E132269EAE2F00DBCB25 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E131269EAE2F00DBCB25 /* Choice.swift */; };
+		F97FF3DA26A141840074FBA4 /* ChoiceStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */; };
 		F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		F96FDA56268BE415000184CA /* PollCollectionDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataService.swift; sourceTree = "<group>"; };
 		F971E12F269E9C3F00DBCB25 /* UserChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChoice.swift; sourceTree = "<group>"; };
 		F971E131269EAE2F00DBCB25 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceStructTest.swift; sourceTree = "<group>"; };
 		F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 				F966CF66267BD0F80058BA29 /* PollStructTest.swift */,
 				F966CF68267BD1B40058BA29 /* PollManagerTests.swift */,
 				F94D8BDB2698F5160006AD49 /* UserClassTest.swift */,
+				F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */,
 			);
 			path = TestModels;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94D8BDC2698F5160006AD49 /* UserClassTest.swift in Sources */,
+				F97FF3DA26A141840074FBA4 /* ChoiceStructTest.swift in Sources */,
 				F95D847D268D0507006452FA /* PollCollectionDataServiceTests.swift in Sources */,
 				F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */,
 				F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */,
