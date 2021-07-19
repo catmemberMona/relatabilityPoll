@@ -11,7 +11,6 @@ import XCTest
 class FeedViewControllerTests: XCTestCase {
     
     var sut: FeedViewController!
-    var mockFeedViewController = MockFeedViewController()
 
     override func setUpWithError() throws {
         sut = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Guest_Feed_View_Controller_Id") as! FeedViewController)
@@ -45,9 +44,4 @@ class FeedViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.feedTableView.dataSource as! PollCollectionDataService, sut.feedTableView.delegate as! PollCollectionDataService)
     }
     
-    func testData_AttemptRetrieval_ReturnsTrue(){
-        mockFeedViewController.loadPolls()
-        XCTAssertTrue(mockFeedViewController.attemptToRetrieveData)
-        
-    }
 }

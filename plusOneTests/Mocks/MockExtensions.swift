@@ -54,10 +54,10 @@ extension PollCellTests {
     }
 }
 
-extension FeedViewControllerTests {
-    class MockFeedViewController: FeedViewController {
+extension PollManagerTests {
+    class MockPollManager: PollManager {
         var attemptToRetrieveData = false
-        override func loadPolls() {
+        override func loadPolls(tableView: UITableView) {
             attemptToRetrieveData = true
         }
     }

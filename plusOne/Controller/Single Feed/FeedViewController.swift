@@ -15,7 +15,6 @@ class FeedViewController: UIViewController {
     @IBOutlet var dataService: PollCollectionDataService!
     
     var pollManager = PollManager()
-    var db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,30 +24,13 @@ class FeedViewController: UIViewController {
         
         dataService.pollManager = pollManager
         
-        self.loadPolls()
+        pollManager.loadPolls(tableView: feedTableView)
+
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
     }
     
-    func loadPolls() {
-        db.collection(K.FStore.pollCollection).getDocuments {(querySnapshot, error) in
-            if let e = error {
-                print("Could not retrieve data from database with error: \(e)")
-            } else {
-                print("Has Snapshots")
-                if let snapshotDocuments = querySnapshot?.documents {
-                    for doc in snapshotDocuments {
-                        let data = doc.data()
-                        if let statement = data[K.FStore.Poll.statement] as? String, let id = data[K.FStore.Poll.id] as? Int, let reactions = data[K.FStore.Poll.reactions] as? Int {
-                            self.dataService.pollManager?.addPoll(poll: Poll(id: id, statement: statement, reactions: reactions))
-                            self.feedTableView.reloadData()
-                        }
-                        
-                    }
-                }
-            }
-        }
-    }
+   
     
 
 }
