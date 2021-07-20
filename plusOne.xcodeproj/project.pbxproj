@@ -37,6 +37,7 @@
 		F9683F022697F0230079A17E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9683F012697F0230079A17E /* GoogleService-Info.plist */; };
 		F96A24562676885700E4630E /* apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = F96A24552676885700E4630E /* apps.googleusercontent.com.plist */; };
 		F96FDA57268BE415000184CA /* PollCollectionDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96FDA56268BE415000184CA /* PollCollectionDataService.swift */; };
+		F971D0FA26A6763C00FD9740 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971D0F926A6763C00FD9740 /* UIView.swift */; };
 		F971E130269E9C3F00DBCB25 /* UserChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E12F269E9C3F00DBCB25 /* UserChoice.swift */; };
 		F971E132269EAE2F00DBCB25 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E131269EAE2F00DBCB25 /* Choice.swift */; };
 		F97FF3DA26A141840074FBA4 /* ChoiceStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */; };
@@ -90,6 +91,7 @@
 		F9683F012697F0230079A17E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F96A24552676885700E4630E /* apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.googleusercontent.com.plist; sourceTree = "<group>"; };
 		F96FDA56268BE415000184CA /* PollCollectionDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCollectionDataService.swift; sourceTree = "<group>"; };
+		F971D0F926A6763C00FD9740 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F971E12F269E9C3F00DBCB25 /* UserChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChoice.swift; sourceTree = "<group>"; };
 		F971E131269EAE2F00DBCB25 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceStructTest.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		F96821CB2670201500ED7C17 /* plusOne */ = {
 			isa = PBXGroup;
 			children = (
+				F971D0F826A6762400FD9740 /* Extensions */,
 				F971E12E269E9C2800DBCB25 /* Enum */,
 				F96FDA55268BE3D4000184CA /* Data Service */,
 				F964EE9D267437BF007809B0 /* Utils */,
@@ -262,6 +265,14 @@
 				F964DE4E26A3BAE9006620E4 /* LoggedInPollCollectionDataService.swift */,
 			);
 			path = "Data Service";
+			sourceTree = "<group>";
+		};
+		F971D0F826A6762400FD9740 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F971D0F926A6763C00FD9740 /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F971E12E269E9C2800DBCB25 /* Enum */ = {
@@ -485,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F971D0FA26A6763C00FD9740 /* UIView.swift in Sources */,
 				F94A74BE2672FEBF00F5BA4D /* AccessAccountViewController.swift in Sources */,
 				F948950326782D1B006F7E18 /* Constants.swift in Sources */,
 				F96FDA57268BE415000184CA /* PollCollectionDataService.swift in Sources */,
