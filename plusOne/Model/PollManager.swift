@@ -12,6 +12,7 @@ class PollManager {
     var polls: [Poll] = []
     var visiblePolls: [Poll] = []
     var hiddenPolls: [Poll] = []
+    var reactedPolls: [Poll] = []
     
     var totalPolls: Int { return polls.count}
     
@@ -38,6 +39,14 @@ class PollManager {
         return nil
     }
     
+    func userReactedToPollStatement(id: Int){
+        if let index = visiblePolls.firstIndex(where: { $0.id == id }) {
+            let poll = visiblePolls[index]
+            reactedPolls.append(poll)
+        }
+    }
+    
+    //loads all polls from database and sets the tableview5
     func loadPolls(tableView: UITableView) {
         db.collection(K.FStore.pollCollection).getDocuments {(querySnapshot, error) in
             if let e = error {

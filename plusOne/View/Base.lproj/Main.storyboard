@@ -293,6 +293,9 @@
                                                                                 <constraint firstAttribute="width" secondItem="aQ6-8y-uBz" secondAttribute="height" multiplier="1:1" id="8TE-Ox-DnY"/>
                                                                             </constraints>
                                                                             <state key="normal" title="Can't relate"/>
+                                                                            <connections>
+                                                                                <action selector="notRelate:" destination="OQV-fV-FSA" eventType="touchUpInside" id="mUN-WH-ydP"/>
+                                                                            </connections>
                                                                         </button>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="percentages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgP-PN-Otx">
                                                                             <rect key="frame" x="10" y="298.5" width="168" height="20.5"/>
@@ -322,6 +325,9 @@
                                                                                 <constraint firstAttribute="height" constant="90" id="p2o-lJ-wVX"/>
                                                                             </constraints>
                                                                             <state key="normal" title="I can relate"/>
+                                                                            <connections>
+                                                                                <action selector="relate:" destination="OQV-fV-FSA" eventType="touchUpInside" id="n3s-YL-D9V"/>
+                                                                            </connections>
                                                                         </button>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="percentages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-dj-lIT">
                                                                             <rect key="frame" x="10" y="298.5" width="168" height="20.5"/>
@@ -368,6 +374,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="notRelateBtn" destination="aQ6-8y-uBz" id="0AC-pi-mKE"/>
+                                            <outlet property="notRelatePercentageText" destination="wgP-PN-Otx" id="lTh-W7-qqM"/>
+                                            <outlet property="numOfUserReactedText" destination="9Oz-Lo-VQk" id="86Z-Dx-cSg"/>
+                                            <outlet property="relateBtn" destination="iwr-2f-bb7" id="Aih-AL-gRn"/>
+                                            <outlet property="relatePercentageText" destination="hXt-dj-lIT" id="SaZ-CZ-crG"/>
                                             <outlet property="statementText" destination="fGc-Hw-rlI" id="Qfn-pc-tFq"/>
                                         </connections>
                                     </tableViewCell>

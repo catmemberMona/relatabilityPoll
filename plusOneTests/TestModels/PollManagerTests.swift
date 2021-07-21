@@ -125,4 +125,19 @@ class PollManagerTests: XCTestCase {
         XCTAssertTrue(mockPollManager.attemptToRetrieveData)
         
     }
+    
+    func testReactedPolls_AddPollWhenUserReacts_ReturnsOne(){
+        sut.addPoll(poll: testPoll)
+        sut.userReactedToPollStatement(id: testPoll.id)
+        XCTAssertEqual(sut.reactedPolls.count, 1)
+    }
+    
+    func testVisiblePolls_ShouldNotChangeWhenUserReacts(){
+        sut.addPoll(poll: testPoll)
+        let beforeReactionCount = sut.visiblePolls.count
+        sut.userReactedToPollStatement(id: testPoll.id)
+        let afterReactionCount = sut.visiblePolls.count
+        
+        XCTAssertEqual(beforeReactionCount, afterReactionCount)
+    }
 }
