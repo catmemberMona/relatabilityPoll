@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Poll: Equatable {
+class Poll: Equatable {
     let id: Int
     var statement: String
     var hidden: Bool

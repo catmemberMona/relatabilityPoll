@@ -24,7 +24,7 @@
 		F964EE9926741337007809B0 /* SingleFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9826741337007809B0 /* SingleFeedTVC.swift */; };
 		F964EE9F267437DF007809B0 /* typingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964EE9E267437DF007809B0 /* typingAnimation.swift */; };
 		F966CF63267BC3DD0058BA29 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF62267BC3DD0058BA29 /* Poll.swift */; };
-		F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF66267BD0F80058BA29 /* PollStructTest.swift */; };
+		F966CF67267BD0F80058BA29 /* PollClassTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF66267BD0F80058BA29 /* PollClassTest.swift */; };
 		F966CF69267BD1B40058BA29 /* PollManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF68267BD1B40058BA29 /* PollManagerTests.swift */; };
 		F966CF6B267BD27F0058BA29 /* PollManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966CF6A267BD27F0058BA29 /* PollManager.swift */; };
 		F96821CD2670201500ED7C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96821CC2670201500ED7C17 /* AppDelegate.swift */; };
@@ -77,7 +77,7 @@
 		F966CF58267BC1500058BA29 /* plusOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plusOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F966CF5C267BC1500058BA29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F966CF62267BC3DD0058BA29 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
-		F966CF66267BD0F80058BA29 /* PollStructTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollStructTest.swift; sourceTree = "<group>"; };
+		F966CF66267BD0F80058BA29 /* PollClassTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollClassTest.swift; sourceTree = "<group>"; };
 		F966CF68267BD1B40058BA29 /* PollManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollManagerTests.swift; sourceTree = "<group>"; };
 		F966CF6A267BD27F0058BA29 /* PollManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollManager.swift; sourceTree = "<group>"; };
 		F96821C92670201500ED7C17 /* plusOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plusOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,7 +202,7 @@
 		F966CF64267BD0A40058BA29 /* TestModels */ = {
 			isa = PBXGroup;
 			children = (
-				F966CF66267BD0F80058BA29 /* PollStructTest.swift */,
+				F966CF66267BD0F80058BA29 /* PollClassTest.swift */,
 				F966CF68267BD1B40058BA29 /* PollManagerTests.swift */,
 				F94D8BDB2698F5160006AD49 /* UserClassTest.swift */,
 				F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */,
@@ -491,7 +491,7 @@
 				F935FF1E268FFB6100AE306D /* PollCellTests.swift in Sources */,
 				F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */,
 				F935FF1B268FEA3000AE306D /* MockExtensions.swift in Sources */,
-				F966CF67267BD0F80058BA29 /* PollStructTest.swift in Sources */,
+				F966CF67267BD0F80058BA29 /* PollClassTest.swift in Sources */,
 				F971D0FC26A677C600FD9740 /* UserPollCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
