@@ -51,23 +51,21 @@ class UserPollCell: UITableViewCell {
     
     @IBAction func notRelate(_ sender: UIButton) {
         self.newUserChoice = UserChoice.notRelatable
-        disableEnableChoice(button: sender)
-        incrementNumOfUsersReacted()
-        print("BUTTON IN NOT RELAte", sender)
-        // disable button
-        // if other button was previously disabled, reable it
-        
+        self.userReacted(button: sender)
+       
         // add to reactedPolls/History
     }
     
     @IBAction func relate(_ sender: UIButton) {
         self.newUserChoice = UserChoice.relatable
-        disableEnableChoice(button: sender)
-        incrementNumOfUsersReacted()
-        // disable button
-        // if other button was previously disabled, reable it
-        
+        self.userReacted(button: sender)
+     
         // add to reactedPolls/History
+    }
+    
+    func userReacted(button: UIButton){
+        incrementNumOfUsersReacted()
+        disableEnableChoice(button: button)
     }
     
     func disableEnableChoice(button: UIButton){
@@ -89,8 +87,10 @@ class UserPollCell: UITableViewCell {
     }
     
     func incrementNumOfUsersReacted(){
-        poll.reactions += 1
-        self.numOfUserReactedText.text = "\(poll.reactions) Users Reacted"
+        if !User.reacted.contains(where: {$0.pollId == poll.id}) {
+            poll.reactions += 1
+            self.numOfUserReactedText.text = "\(poll.reactions) Users Reacted"
+        }
     }
     
     func configPollCell(poll: Poll){

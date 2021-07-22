@@ -37,7 +37,7 @@ class UserPollCellTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    // MOCK: init cell
+    // MARK: init cell
     func testCell_Config_ShouldSetStatementLabelToPollData(){
         XCTAssertEqual(sut.statementText?.text, "Eating is enjoyable")
     }
@@ -50,12 +50,14 @@ class UserPollCellTests: XCTestCase {
         XCTAssertNil(sut.choice)
     }
     
-    // MOCK: User reacts
+    // MARK: User reacts
+    // MARK: Increment Total
     func testCell_ShouldIncrementWhenUserReactsIsCalled_ReturnOne(){
         sut.incrementNumOfUsersReacted()
         XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
     }
     
+    // MARK: Choice Buttons
     func testCellButtons_ShouldDisableChoiceButton(){
         sut.newUserChoice = UserChoice.notRelatable
         sut.choice = Choice(pollId: sut.poll.id, userChoice: sut.newUserChoice.rawValue)
@@ -77,13 +79,16 @@ class UserPollCellTests: XCTestCase {
         XCTAssertEqual(sut.choice?.userChoice, 1)
     }
     
-    func testCellButtons_ShouldEnableOtherChoiceButtonWhenUserChangesChoice(){
-        
-    }
     
     // test for when user presses the buttons on the poll cell and should only increment once
+    func testCell_IncrementTotalNumberOfUsersReactedOnlyOnceForPoll(){
+        sut.notRelate(UIButton())
+        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
+        
+        sut.relate(UIButton())
+        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
+    }
     
-
 
 
 
