@@ -25,8 +25,6 @@ class UserSingleFeedViewController: UIViewController {
         
         dataService.pollManager = pollManager
         
-        print("USER SIGNED IN AND THIS IS USER FEED")
-        
         self.pollManager.loadPolls(tableView: userFeedTableView)
         
     }
