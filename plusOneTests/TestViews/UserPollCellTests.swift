@@ -11,7 +11,7 @@ import XCTest
 class UserPollCellTests: XCTestCase {
     var tableView: UITableView!
     var dataService: MockCellDataSource!
-    var sut: UserPollCell!
+    var sut: MockUserPollCell!
     
     let poll = Poll(id: 0, statement: "Eating is enjoyable")
     
@@ -78,6 +78,22 @@ class UserPollCellTests: XCTestCase {
     }
     
     func testCellButtons_ShouldEnableOtherChoiceButtonWhenUserChangesChoice(){
+        sut.newUserChoice = UserChoice.notRelatable
+        sut.choice = Choice(pollId: sut.poll.id, userChoice: sut.newUserChoice.rawValue)
+        
+        let notRelateButton = sut.relate
+        let relateButton = sut.notRelate
+        sut.disableEnableChoice(button: notRelateButton)
+        XCTAssertFalse(notRelateButton.isEnabled)
+        XCTAssertTrue(relateButton.isEnabled)
+        
+        sut.newUserChoice = .relatable
+        sut.choice = Choice(pollId: sut.poll.id, userChoice: sut.newUserChoice.rawValue)
+        
+
+        sut.disableEnableChoice(button: relateButton)
+        XCTAssertFalse(relateButton.isEnabled)
+        XCTAssertTrue(notRelateButton.isEnabled)
         
     }
     

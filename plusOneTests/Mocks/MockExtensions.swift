@@ -64,6 +64,29 @@ extension UserPollCellTests {
             return UITableViewCell()
         }  
     }
+    
+    class MockUserPollCell: UserPollCell {
+        var relate = UIButton()
+        var notRelate = UIButton()
+        
+        override func disableEnableChoice(button: UIButton){
+            // disable the button
+            button.isEnabled = false
+
+            // enable the other choice button when the user changes their choice
+            if self.choice != nil {
+                switch newUserChoice {
+                case .notRelatable:
+                    relate.isEnabled = true
+                default:
+                    notRelate.isEnabled = true
+                }
+            }
+            
+            // add new/changed choice
+            self.choice = Choice(pollId: poll.id, userChoice: newUserChoice.rawValue)
+        }
+    }
 }
 
 
