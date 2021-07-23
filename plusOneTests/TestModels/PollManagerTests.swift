@@ -11,6 +11,7 @@ import XCTest
 class PollManagerTests: XCTestCase {
     // sut = system under test
     var sut: PollManager!
+    var mockPollManager: MockPollManager!
     
     var testPolls = [Poll(id: 0, statement: "Gave birth."), Poll(id: 1, statement: "Almost drowned in the past."), Poll(id: 3, statement: "No cat, but love cats.")]
 
@@ -20,6 +21,7 @@ class PollManagerTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         sut = PollManager()
+        mockPollManager = MockPollManager()
         testPoll = testPolls[0]
         testPoll2 = testPolls[1]
         
@@ -116,5 +118,26 @@ class PollManagerTests: XCTestCase {
     func testReactions_AddPollWithReactionParameter_ReturnsTen(){
         sut.addPoll(poll: Poll(id: 0, statement: "Gave birth.", reactions: 10))
         XCTAssertEqual(sut.polls[0].reactions, 10)
+    }
+    
+    func testData_AttemptRetrieval_ReturnsTrue(){
+        mockPollManager.loadPolls(tableView: UITableView())
+        XCTAssertTrue(mockPollManager.attemptToRetrieveData)
+        
+    }
+    
+    func testReactedPolls_AddPollWhenUserReacts_ReturnsOne(){
+        sut.addPoll(poll: testPoll)
+        sut.userReactedToPollStatement(id: testPoll.id)
+        XCTAssertEqual(sut.reactedPolls.count, 1)
+    }
+    
+    func testVisiblePolls_ShouldNotChangeWhenUserReacts(){
+        sut.addPoll(poll: testPoll)
+        let beforeReactionCount = sut.visiblePolls.count
+        sut.userReactedToPollStatement(id: testPoll.id)
+        let afterReactionCount = sut.visiblePolls.count
+        
+        XCTAssertEqual(beforeReactionCount, afterReactionCount)
     }
 }

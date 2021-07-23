@@ -13,9 +13,16 @@ struct K {
     static let guestFeedVCId = "Guest_Feed_View_Controller_Id"
     static let firstDecisionVC = "First_Decision"
     static let pollCellId = "Poll_Cell_Id"
+    static let userPollCellId = "User_Poll_Cell_Id"
+    
+    struct User {
+        static let email = "email"
+        static let reacted = "reacted"
+    }
     
     struct FStore {
         static let pollCollection = "polls"
+        static let usersCollection = "users"
         
         struct Poll {
             static let id = "id"

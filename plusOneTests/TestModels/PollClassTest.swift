@@ -8,7 +8,7 @@
 import XCTest
 
 @testable import plusOne
-class PollStructTest: XCTestCase {
+class PollClassTest: XCTestCase {
     let testPoll = Poll(id: 0, statement: "Farted at least once on the subway.")
     
 

@@ -10,9 +10,22 @@ import GoogleSignIn
 
 class UserSingleFeedViewController: UIViewController {
 
+    @IBOutlet weak var filter: UISegmentedControl!
+    @IBOutlet weak var userFeedTableView: UITableView!
+    @IBOutlet var dataService: LoggedInPollCollectionDataService!
+    
+    
+    var pollManager = PollManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.userFeedTableView.dataSource = dataService
+        self.userFeedTableView.delegate = dataService
+        
+        dataService.pollManager = pollManager
+        
+        self.pollManager.loadPolls(tableView: userFeedTableView)
         
     }
 
