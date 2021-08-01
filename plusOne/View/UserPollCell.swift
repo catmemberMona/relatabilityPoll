@@ -98,9 +98,21 @@ class UserPollCell: UITableViewCell {
         self.poll = poll
         self.statementText.text = poll.statement
         self.numOfUserReactedText.text = "\(poll.reactions) Users Reacted"
-    
         
- 
+        // retrieves and sets the cell's buttons state
+        // this is an int of 0 or 1
+        switch self.choice?.userChoice {
+        case nil:
+            relateBtn.isEnabled = true
+            notRelateBtn.isEnabled = true
+            break
+        case 0:
+            notRelateBtn.isEnabled = false
+            relateBtn.isEnabled = true
+        default:
+            relateBtn.isEnabled = false
+            notRelateBtn.isEnabled = true
+        }
     }
 
 }
