@@ -13,7 +13,7 @@ class UserPollCellTests: XCTestCase {
     var dataService: MockCellDataSource!
     var sut: UserPollCell!
     
-    let poll = Poll(id: 0, statement: "Eating is enjoyable")
+    let poll = Poll(id: 0, statement: "Eating is enjoyable", choices: [])
     
     override func setUpWithError() throws {
         // sets the view controller

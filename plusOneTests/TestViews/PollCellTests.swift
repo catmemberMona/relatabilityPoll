@@ -24,7 +24,7 @@ class PollCellTests: XCTestCase {
         tableView.dataSource = mockDataSource
         
         cell = (tableView.dequeueReusableCell(withIdentifier: K.pollCellId, for: IndexPath(row: 0, section: 0)) as! PollCell)
-        cell.configPollCell(poll: Poll(id: 0, statement: "Eating is enjoyable"))
+        cell.configPollCell(poll: Poll(id: 0, statement: "Eating is enjoyable", choices: []))
     }
 
     override func tearDownWithError() throws {

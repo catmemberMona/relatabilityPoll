@@ -15,9 +15,9 @@ class PollCollectionDataServiceTests: XCTestCase {
     var feedVC: FeedViewController!
     var tableViewMock: TableViewMock!
     
-    let pollOne = Poll(id: 0, statement: "Feeling down on rainy days")
-    let pollTwo = Poll(id: 1, statement: "Laughing at the pain from a massage")
-    let pollThree = Poll(id: 2, statement: "Spewed liquid out of my mouth")
+    let pollOne = Poll(id: 0, statement: "Feeling down on rainy days", choices: [])
+    let pollTwo = Poll(id: 1, statement: "Laughing at the pain from a massage", choices: [])
+    let pollThree = Poll(id: 2, statement: "Spewed liquid out of my mouth", choices: [])
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

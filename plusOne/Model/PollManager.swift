@@ -57,7 +57,7 @@ class PollManager {
                     for doc in snapshotDocuments {
                         let data = doc.data()
                         if let statement = data[K.FStore.Poll.statement] as? String, let id = data[K.FStore.Poll.id] as? Int, let reactions = data[K.FStore.Poll.reactions] as? Int {
-                            self.addPoll(poll: Poll(id: id, statement: statement, reactions: reactions))
+                            self.addPoll(poll: Poll(id: id, statement: statement, reactions: reactions, choices: [])) // need to add choices to db
                       
                             tableView.reloadData()
                         }

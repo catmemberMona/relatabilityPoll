@@ -9,7 +9,7 @@ import XCTest
 
 @testable import plusOne
 class PollClassTest: XCTestCase {
-    let testPoll = Poll(id: 0, statement: "Farted at least once on the subway.")
+    let testPoll = Poll(id: 0, statement: "Farted at least once on the subway.", choices: [])
     
 
     override func setUpWithError() throws {
@@ -40,5 +40,9 @@ class PollClassTest: XCTestCase {
         XCTAssertEqual(testPoll.reactions, 0)
     }
     
+    func testInit_PollWithAllTheChoicesThatUsersMade(){
+        XCTAssertNotNil(testPoll.choices)
+        XCTAssertEqual(testPoll.choices.count, 0)
+    }
     
 }

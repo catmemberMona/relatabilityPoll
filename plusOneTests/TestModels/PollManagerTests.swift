@@ -13,7 +13,7 @@ class PollManagerTests: XCTestCase {
     var sut: PollManager!
     var mockPollManager: MockPollManager!
     
-    var testPolls = [Poll(id: 0, statement: "Gave birth."), Poll(id: 1, statement: "Almost drowned in the past."), Poll(id: 3, statement: "No cat, but love cats.")]
+    var testPolls = [Poll(id: 0, statement: "Gave birth.", choices: []), Poll(id: 1, statement: "Almost drowned in the past.", choices: []), Poll(id: 3, statement: "No cat, but love cats.", choices: [])]
 
     var testPoll: Poll!
     var testPoll2: Poll!
@@ -116,7 +116,7 @@ class PollManagerTests: XCTestCase {
     }
     
     func testReactions_AddPollWithReactionParameter_ReturnsTen(){
-        sut.addPoll(poll: Poll(id: 0, statement: "Gave birth.", reactions: 10))
+        sut.addPoll(poll: Poll(id: 0, statement: "Gave birth.", reactions: 10, choices: []))
         XCTAssertEqual(sut.polls[0].reactions, 10)
     }
     

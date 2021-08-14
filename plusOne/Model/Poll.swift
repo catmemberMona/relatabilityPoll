@@ -12,13 +12,15 @@ class Poll: Equatable {
     var statement: String
     var hidden: Bool
     var reactions: Int
+    var choices: [Choice]
     
-    init(id:Int, statement:String, reactions: Int = 0) {
+    init(id:Int, statement:String, reactions: Int = 0, choices: [Choice]) {
         // id will also be the same as index
         self.id = id
         self.statement = statement
         self.hidden = false
         self.reactions = reactions
+        self.choices = choices
     }
 }
  
