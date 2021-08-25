@@ -55,7 +55,7 @@ class UserPollCellTests: XCTestCase {
 //    func testCell_ShouldIncrementWhenUserReactsIsCalled_ReturnOne(){
 //        sut.incrementNumOfUsersReacted()
 //        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
-    }
+//    }
     
     // MARK: Choice Buttons
     func testCellButtons_ShouldDisableChoiceButton(){
@@ -87,7 +87,7 @@ class UserPollCellTests: XCTestCase {
 //
 //        sut.relate(UIButton())
 //        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
-    }
+//    }
     
 
 
