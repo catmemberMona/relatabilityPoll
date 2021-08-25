@@ -52,9 +52,9 @@ class UserPollCellTests: XCTestCase {
     
     // MARK: User reacts
     // MARK: Increment Total
-    func testCell_ShouldIncrementWhenUserReactsIsCalled_ReturnOne(){
-        sut.incrementNumOfUsersReacted()
-        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
+//    func testCell_ShouldIncrementWhenUserReactsIsCalled_ReturnOne(){
+//        sut.incrementNumOfUsersReacted()
+//        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
     }
     
     // MARK: Choice Buttons
@@ -81,12 +81,12 @@ class UserPollCellTests: XCTestCase {
     
     
     // test for when user presses the buttons on the poll cell and should only increment once
-    func testCell_IncrementTotalNumberOfUsersReactedOnlyOnceForPoll(){
-        sut.notRelate(UIButton())
-        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
-        
-        sut.relate(UIButton())
-        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
+//    func testCell_IncrementTotalNumberOfUsersReactedOnlyOnceForPoll(){
+//        sut.notRelate(UIButton())
+//        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
+//
+//        sut.relate(UIButton())
+//        XCTAssertEqual(sut.numOfUserReactedText?.text, "1 Users Reacted")
     }
     
 

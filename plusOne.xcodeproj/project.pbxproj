@@ -43,6 +43,8 @@
 		F971E132269EAE2F00DBCB25 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971E131269EAE2F00DBCB25 /* Choice.swift */; };
 		F97FF3DA26A141840074FBA4 /* ChoiceStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */; };
 		F9B6DBF6268B82C4008A4FFF /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */; };
+		F9FD6F8826C7FB2100EB4A6E /* AccountManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD6F8726C7FB2100EB4A6E /* AccountManagerTests.swift */; };
+		F9FD6F8A26C7FB7B00EB4A6E /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD6F8926C7FB7B00EB4A6E /* AccountManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		F971E131269EAE2F00DBCB25 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceStructTest.swift; sourceTree = "<group>"; };
 		F9B6DBF5268B82C4008A4FFF /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
+		F9FD6F8726C7FB2100EB4A6E /* AccountManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerTests.swift; sourceTree = "<group>"; };
+		F9FD6F8926C7FB7B00EB4A6E /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 				F966CF68267BD1B40058BA29 /* PollManagerTests.swift */,
 				F94D8BDB2698F5160006AD49 /* UserClassTest.swift */,
 				F97FF3D926A141840074FBA4 /* ChoiceStructTest.swift */,
+				F9FD6F8726C7FB2100EB4A6E /* AccountManagerTests.swift */,
 			);
 			path = TestModels;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				F966CF6A267BD27F0058BA29 /* PollManager.swift */,
 				F94D8BDD2698F63E0006AD49 /* User.swift */,
 				F971E131269EAE2F00DBCB25 /* Choice.swift */,
+				F9FD6F8926C7FB7B00EB4A6E /* AccountManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -483,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FD6F8826C7FB2100EB4A6E /* AccountManagerTests.swift in Sources */,
 				F94E062926A290E800F2B2C9 /* UserSingleFeedViewControllerTest.swift in Sources */,
 				F94D8BDC2698F5160006AD49 /* UserClassTest.swift in Sources */,
 				F97FF3DA26A141840074FBA4 /* ChoiceStructTest.swift in Sources */,
@@ -508,6 +515,7 @@
 				F96821D12670201500ED7C17 /* UserSingleFeedViewController.swift in Sources */,
 				F971E130269E9C3F00DBCB25 /* UserChoice.swift in Sources */,
 				F966CF63267BC3DD0058BA29 /* Poll.swift in Sources */,
+				F9FD6F8A26C7FB7B00EB4A6E /* AccountManager.swift in Sources */,
 				F964DE5326A3C019006620E4 /* UserPollCell.swift in Sources */,
 				F966CF6B267BD27F0058BA29 /* PollManager.swift in Sources */,
 				F94A74BC2672FE6E00F5BA4D /* FirstChoiceViewController.swift in Sources */,

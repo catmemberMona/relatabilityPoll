@@ -35,14 +35,13 @@ class PollClassTest: XCTestCase {
         XCTAssertEqual(testPoll.hidden, false)
     }
     
-    func testInit_PollWithReactions(){
-        XCTAssertNotNil(testPoll.reactions)
-        XCTAssertEqual(testPoll.reactions, 0)
-    }
-    
     func testInit_PollWithAllTheChoicesThatUsersMade(){
         XCTAssertNotNil(testPoll.choices)
         XCTAssertEqual(testPoll.choices.count, 0)
     }
     
+    func testInit_PollWithReactions(){
+        XCTAssertNotNil(testPoll.reactions)
+        XCTAssertEqual(testPoll.reactions, testPoll.choices.count)
+    }
 }

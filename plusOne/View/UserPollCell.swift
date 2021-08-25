@@ -88,7 +88,7 @@ class UserPollCell: UITableViewCell {
     
     func incrementNumOfUsersReacted(){
         if !User.reacted.contains(where: {$0.pollId == poll.id}) {
-            poll.reactions += 1
+            // add this to the poll's choices array to update num of reactions -- update the db first before it retrieves it
             self.numOfUserReactedText.text = "\(poll.reactions) Users Reacted"
         }
     }

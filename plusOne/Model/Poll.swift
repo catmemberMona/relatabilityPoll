@@ -11,15 +11,18 @@ class Poll: Equatable {
     let id: Int
     var statement: String
     var hidden: Bool
-    var reactions: Int
     var choices: [Choice]
+    var reactions: Int {
+        get {
+            return self.choices.count
+        }
+    }
     
-    init(id:Int, statement:String, reactions: Int = 0, choices: [Choice]) {
+    init(id:Int, statement:String, choices: [Choice]) {
         // id will also be the same as index
         self.id = id
         self.statement = statement
         self.hidden = false
-        self.reactions = reactions
         self.choices = choices
     }
 }

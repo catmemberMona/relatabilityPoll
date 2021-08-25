@@ -8,7 +8,7 @@
 import Foundation
 
 class User {
-    static var email: String!
+    static var email: String! // change this get this info from user account manager
     static var tokenId: String!
     static var reacted: [Choice] = []
     

@@ -27,6 +27,11 @@ class ChoiceStructTest: XCTestCase {
         XCTAssertEqual(choiceOne.pollId, 0)
     }
     
+    func testInit_ChoiceWithUser(){
+        XCTAssertNotNil(choiceOne.user)
+//        XCTAssertNotNil(choiceOne.user.email)
+    }
+    
     func testInit_ChoiceWithUserChoice(){
         XCTAssertNotNil(choiceOne.userChoice)
         XCTAssertEqual(choiceOne.userChoice, 1)
